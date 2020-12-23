@@ -1,5 +1,20 @@
-extends template/layout.pug
-
-block content
-    header
-        include template/header.pug
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        title=site.title
+        meta(name="description", content=meta.description)
+        meta(property="og:title" content=meta.title)
+        meta(property="og:description" content=meta.description)
+        meta(property="og:url" content=meta.url)
+        meta(property="og:image" content=meta.image)
+        meta(name="twitter:card" content="summary_large_image")
+        meta(name="viewport", content="width=device-width")
+        meta(name="theme-color" content="")
+        link(rel="stylesheet", href="./style/main.pcss")
+        link(rel="shortcut icon" href="/media/ico-favicon.png" type="image/x-icon")
+        // link(rel="preload" href="" as="")
+        script(defer src="./script/main.js")
+    body
+        div.container.mx-auto
+            block content
