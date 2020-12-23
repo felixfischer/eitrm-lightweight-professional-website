@@ -1,0 +1,50 @@
+{
+  "name": "eitrm-lightweight-professional-website",
+  "version": "1.0.0",
+  "description": "EIT RawMaterials' Lightweight Professional Course website",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn build",
+    "clean": "rm -rf .cache dist",
+    "serve": "parcel src/*.pug",
+    "build": "parcel build src/*.pug --no-source-maps && du -sh dist",
+    "release": "release-it",
+    "snap": "git add -A && git commit -m 'Snapshot'",
+    "caddy": "caddy file-server --browse --root ./dist/ --listen localhost:1234"
+  },
+  "keywords": [
+    "static",
+    "website",
+    "parcel",
+    "tailwind",
+    "jamstack"
+  ],
+  "author": "Felix Fischer <felix.fischer@neulandherzer.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "style": "0.0.3"
+  },
+  "devDependencies": {
+    "alpinejs": "^2.7.0",
+    "cssnano": "^4.1.10",
+    "parcel-bundler": "^1.12.4",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.2.3",
+    "pug": "^3.0.0",
+    "release-it": "^14.2.0",
+    "tailwindcss": "^1.9.5"
+  },
+  "release-it": {
+    "git": {
+      "tag": true,
+      "push": true
+    },
+    "github": {
+      "release": false
+    },
+    "npm": {
+      "publish": false
+    }
+  }
+}
