@@ -17,7 +17,7 @@ collections:
 
   - name: contacts
     label: Contacts
-    label_singular: contact
+    label_singular: Contact
     folder: src/collections/contacts
     identifier_field: name
     create: true
@@ -48,3 +48,10 @@ collections:
         name: content
         widget: list
         field: {label: Item, name: item, widget: string}
+      - name: dates
+        label: Dates
+        label_singular: Date
+        widget: list
+        fields:
+          - {label: Label, name: label, widget: string}
+          - {label: Date, name: date, widget: date, format: YYYY-MM-DD}
