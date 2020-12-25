@@ -1,13 +1,14 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: "src/media/uploads" # Media files will be stored in the repo under images/uploads
+media_folder: "src/media" # Media files will be stored in the repo under images/uploads
 public_folder: "/" # The src attribute for uploaded media
 collections:
   - name: modules
     label: Modules
     label_singular: Module
     folder: src/collections/modules
+    extension: yml
     create: true
     slug: "{{slug}}"
     fields:
@@ -39,6 +40,8 @@ collections:
     label: Levels
     label_singular: Level
     folder: src/collections/levels
+    extension: yml
+    slug: "{{order}}-{{title}}"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
@@ -49,8 +52,9 @@ collections:
     label: Contacts
     label_singular: Contact
     folder: src/collections/contacts
-    identifier_field: name
+    extension: yml
     create: true
+    identifier_field: name
     fields:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Role", name: "role", widget: "string"}
