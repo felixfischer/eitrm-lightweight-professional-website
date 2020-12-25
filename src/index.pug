@@ -16,22 +16,65 @@ html(lang="en")
         // link(rel="preload" href="" as="")
         script(defer src="./script/main.js")
 
-    body(class="")
+    body(class="text-base")
         div.container.mx-auto
 
 
             header(class="")
                 nav(id="nav-main" class="")
-
+                    each item in nav.main
+                        a(href=item.href)= item.text
+                img(src="/media/logo-eitrmacademy.svg" alt="EIT RawMaterials Academy")
+                div(id="cta")
+                    h1=header.title
+                    h2=header.subtitle
+                    a(id="" class="" href=header.cta.href)= header.cta.text
 
             main(class="")
-                section(id="intro" class="")
+                section(id="about" class="")
+                    h2= about.title
+                    p(class="intro")= about.intro
+                    p(class="")= about.body
 
                 section(id="questions" class="")
+                    each question in questions
+                        div
+                            h3= question.q
+                            p= question.a
+                        div
+                            img(src=question.image alt="")
 
                 section(id="course" class="")
                     div(id="at-a-glance" class="")
+                        h2= at_a_glance.title
+                        each item in at_a_glance.properties
+                            div !{item.title}
+                            div
+                                img(src=item.image)
+                        div !{at_a_glance.footnote}
+
                     div(id="overview" class="")
+                        h2= overview.title
+                        p(class="intro")= overview.intro
+                        ul
+                            each prop in overview.properties
+                                li
+                                    div= prop.term
+                                    if prop.deed
+                                        div= prop.deed
+                                    if prop.list
+                                        ul
+                                            each item in prop.list
+                                                li
+                                                    if item.title
+                                                        div= item.title
+                                                    if item.intro
+                                                        div= item.intro
+                                                    if item.items
+                                                        ul
+                                                            each subitem in item.items
+                                                                li= subitem
+
 
                 section(id="modules" class="")
                     div(id="modules-intro" class="")

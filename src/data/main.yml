@@ -23,23 +23,41 @@ contact:
     For questions regarding the course or registration,
     please contact:
   person:
-    name: Andrea Bernards
-    title: Job Title
+    name: Beate Brede
+    title: Head of Talent Recruiting Management
     address: |-
-      Street 123
-      12345 Musterstadt
-      Germany
-    phone: +49 345 4567-567
-    email: loremipsum@domain.com
+      Fraunhofer Institute for Manufacturing Technology and
+      Advanced Materials IFAM 
+      Wiener Straße 12
+      28359 Bremen, Germany
+    phone: +49-421-2246-685
+    fax: +49-421-2246-330
+    email: beate.brede@ifam.fraunhofer.de
+    contact_url: https://www.weiterbildung.ifam.fraunhofer.de/en/send-mail?l=en&m=1.d9ef784caaf5821de34b19be0d97f1c4&k=4265617465204272656465&r=2f656e2f66696265722d636f6d706f736974652d746563686e6f6c6f67792f6c696768747765696768742d70726f66657373696f6e616c2f696e74726f647563746f72792d6d6f64756c652e68746d6c
 
-hero:
+nav:
+  main:
+    - text: About
+      href: '#about'
+    - text: Course Overview
+      href: '#course'
+    - text: Modules
+      href: '#modules'
+    - text: Contact
+      href: '#contact'
+    - text: Partners
+      href: '#partners'
+
+header:
+  title: *title
+  subtitle: *description
   cta:
     text: See modules and register
     href: "#modules"
 
 about:
   title: About Lightweight Professional Course
-  subtitle: >-
+  intro: >-
     Reducing the weight of structures has become a critical
     point of focus for many different sectors, such as
     machine building, transportation and civil construction.
@@ -52,27 +70,28 @@ about:
     respected. The professional training concept underlying
     in the Lightweight Professional courses addresses this
     issues.
-  subsections:
-    - title: What will you learn in this programme?
-      body: >-
-        Participants will be able to identify and
-        differentiate the steps involved in developing
-        lightweight products. They will learn how to use,
-        design, construct and set up processes with specific
-        lightweight materials in the correct way to fully
-        utilise the potential of lightweight strategies.
-      image: &placeholdimg media/img-placeholder-3x2.svg
-    - title: Is this course for you?
-      body: >-
-        The courses are aimed at employees in idustry whose
-        work involves planning the manufacture of
-        lightweight products, and at employers who want to
-        start manufacturing products based on lightweight
-        concepts. The basic level is designed both for
-        managers, engineers and technical staff. The
-        advanced and expert levels are for technical
-        experts.
-      image: *placeholdimg
+
+questions:
+  - q: What will you learn in this programme?
+    a: >-
+      Participants will be able to identify and
+      differentiate the steps involved in developing
+      lightweight products. They will learn how to use,
+      design, construct and set up processes with specific
+      lightweight materials in the correct way to fully
+      utilise the potential of lightweight strategies.
+    image: &placeholdimg media/img-placeholder-3x2.svg
+  - q: Is this course for you?
+    a: >-
+      The courses are aimed at employees in idustry whose
+      work involves planning the manufacture of
+      lightweight products, and at employers who want to
+      start manufacturing products based on lightweight
+      concepts. The basic level is designed both for
+      managers, engineers and technical staff. The
+      advanced and expert levels are for technical
+      experts.
+    image: *placeholdimg
 
 at_a_glance:
   title: Lightweight Professional at a glance
@@ -81,15 +100,16 @@ at_a_glance:
       image: *placeholdimg 
     - title: Modular
       image: *placeholdimg 
-    - title: Certified Qualification (1)
+    - title: Certified Qualification<sup>1</sup>
       image: *placeholdimg 
     - title: International Experts
       image: *placeholdimg 
   footnote: >-
-    1) The qualification is certified by an external
+    <sup>1</sup> The qualification is certified by an external
     accreditation body.
     
-course_overview:
+overview:
+  title: Course overview
   intro: >-
     The Lightweight Professional programme is an
     international, modular training programme developed by
@@ -99,48 +119,48 @@ course_overview:
     atmosphere with the opportunity to exchange experience
     with other participoants and industrial branches.
   properties:
-    - title: Type of Training
-      value: Online Training
-    - title: Course Duration
-      value: >- 
+    - term: Type of Training
+      deed: Online Training
+    - term: Course Duration
+      deed: >- 
         The scope of this training is based on a 40-hour
         classroom course. The e-learning format includes
         learning materials and videos for self-paced
         learning independent of time and place,
         self-assessment questions, as well as live online
         tutorials for exam preparation.
-    - title: Language
-      value: English
-    - title: Course Contents
-      value: >-
+    - term: Language
+      deed: English
+    - term: Course Contents
+      deed: >-
         Lightweight design guidelines, lightweight
         materials, cost- and lifecycle-assessment
         methodologies, specialized instruction on different
         lightweight materials and additional transversal
         perspectives on lightweight materials.
-    - title: How the course is organized
-      value:
+    - term: How the course is organized
+      list:
         - title: Basic Level
           intro: Introductory Modules
         - title: Advanced Level
           intro: Material Modules
         - title: Expert Level
           intro: Transversal Modules
-    - title: Course Fees
-      value: >-
+    - term: Course Fees
+      deed: >-
         Introductory Module (IM): 984€ + 235€ optional
         examination fee. The registration for all material
         modules (FRP, PM, ST, MG, AL, CI, PL) is free of
         charge in 2020!
-    - title: Certification
-      value: >-
+    - term: Certification
+      deed: >-
         The courses follow the requirements of ISO EN 17024
         and are certified by an external accreditation body.
         The certificates confirm that successful course
         participants have acquired expertise and practical
         knowledge in the relevant area.
-    - title: Certification Requirements
-      value:
+    - term: Certification Requirements
+      list:
         - title: Basic Level Certification
           items:
             - Completition of Introductory Module and
@@ -156,8 +176,8 @@ course_overview:
             - Completion of the Advanced Level Certification
             - At least 4 Material Modules and successful
               examination
-    - title: Additional Information
-      value: >-
+    - term: Additional Information
+      deed: >-
         Each module of the Lightweight Professional course
         can be taken individually, regardless of wether or
         not you intend to take sufficient modules to be

@@ -30,9 +30,10 @@ module.exports = {
             base: '1.125rem',   // 18px
             lg: '1.5rem',       // 24px
             xl: '1.75rem',      // 28px
-            '2xl': '2.25rem',   // 36px
-            '3xl': '3.4375rem', // 55px
-            '4xl': '4.125rem',  // 66px
+            '2xl': '1.875rem',  // 30px
+            '3xl': '2.25rem',   // 36px
+            '4xl': '3.4375rem', // 55px
+            '5xl': '4.125rem',  // 66px
         },
         extend: {},
     },
