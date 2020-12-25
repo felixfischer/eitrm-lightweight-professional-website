@@ -26,7 +26,7 @@ module.exports = {
             white: '#ffffff'
         },
         fontSize: {
-            sm: '1rem',      // 16px
+            sm: '1rem',         // 16px
             base: '1.125rem',   // 18px
             lg: '1.5rem',       // 24px
             xl: '1.75rem',      // 28px
