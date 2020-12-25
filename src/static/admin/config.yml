@@ -17,11 +17,7 @@ collections:
       - {label: "Level", name: "level", widget: "relation", collection: "levels", search_fields: ["title", "order"], value_field: "title"} 
       - {label: "Summary", name: "summary", widget: "text"}
       - {label: "Description", name: "desc", widget: "markdown"}
-      - name: contents
-        label: Content items
-        label_singular: Content item
-        widget: list
-        field: {label: Item, name: item, widget: string}
+      - {label: "Course contents", name: "contents", widget: "markdown"}
       - {label: "Recommended knowledge for participation", name: "recommendedKnowledge", widget: "text"}
       - name: dates
         label: Dates
