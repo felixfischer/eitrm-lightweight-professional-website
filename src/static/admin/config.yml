@@ -9,10 +9,27 @@ collections:
     label: Levels
     label_singular: Level
     folder: src/collections/levels
+    create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Order", name: "order", widget: "number", default: 0}
+
+  - name: contacts
+    label: Contacts
+    label_singular: contact
+    folder: src/collections/contacts
+    identifier_field: name
+    create: true
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Role", name: "role", widget: "string"}
+      - {label: "Address", name: "address", widget: "text"}
+      - {label: "Email", name: "email", widget: "string"}
+      - {label: "Phone", name: "phone", widget: "string"}
+      - {label: "Fax", name: "fax", widget: "string"}
+      - {label: "Contact URL", name: "contact", widget: "string"}
+    
   - name: modules
     label: Modules
     label_singular: Module
@@ -26,3 +43,8 @@ collections:
       - {label: "Icon", name: "icon", widget: "image"}
       - {label: "Order", name: "order", widget: "number", default: 0}
       - {label: "Level", name: "level", widget: "relation", collection: "levels", search_fields: ["title", "order"], value_field: "title"} 
+      - {label: "Contact", name: "contact", widget: "relation", collection: "contacts", search_fields: ["name", "role"], value_field: "name"} 
+      - label: Content
+        name: content
+        widget: list
+        field: {label: Item, name: item, widget: string}
