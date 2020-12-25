@@ -1,0 +1,7 @@
+---
+title: Expert
+summary: The Expert Level Transversal Modules extend the knowledge and
+  experience acquired in the Advanced Level by providing a more in-depth product
+  lifecycle perspective on an array of related issues.
+order: 3
+---
