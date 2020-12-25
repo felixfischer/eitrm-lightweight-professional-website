@@ -19,18 +19,12 @@ collections:
       - {label: "Description", name: "desc", widget: "markdown"}
       - {label: "Course contents", name: "contents", widget: "markdown"}
       - {label: "Recommended knowledge for participation", name: "recommendedKnowledge", widget: "text"}
-      - name: dates
-        label: Dates
-        label_singular: Date
-        widget: list
-        fields:
-          - {label: Date, name: date, widget: string}
-          - {label: Label, name: label, widget: string}
+      - {label: "Dates and registration", name: "dates", widget: "markdown"}
+      - {label: "Registration URL", name: "registerUrl", widget: "string"}
+      - {label: "Contact", name: "contact", widget: "relation", collection: "contacts", search_fields: ["name", "role"], value_field: "name"} 
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Icon", name: "icon", widget: "image"}
       - {label: "Order", name: "order", widget: "number", default: 0}
-      - {label: "Contact", name: "contact", widget: "relation", collection: "contacts", search_fields: ["name", "role"], value_field: "name"} 
-      - {label: "Registration URL", name: "registerUrl", widget: "string"}
 
   - name: levels
     label: Levels
