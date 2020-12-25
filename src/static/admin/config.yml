@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "src/media/uploads" # Media files will be stored in the repo under images/uploads
+public_folder: "/" # The src attribute for uploaded media
+collections:
+  - name: courses
+    label: Courses
+    label_singular: Course
+    folder: src/data/courses
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Icon", name: "icon", widget: "image"}
+      - {label: "Order", name: "order", widget: "number", default: 0}
+    
