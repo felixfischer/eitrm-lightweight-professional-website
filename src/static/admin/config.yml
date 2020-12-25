@@ -38,16 +38,13 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Image", name: "image", widget: "image"}
-      - {label: "Icon", name: "icon", widget: "image"}
-      - {label: "Order", name: "order", widget: "number", default: 0}
       - {label: "Level", name: "level", widget: "relation", collection: "levels", search_fields: ["title", "order"], value_field: "title"} 
-      - {label: "Contact", name: "contact", widget: "relation", collection: "contacts", search_fields: ["name", "role"], value_field: "name"} 
+      - {label: "Description", name: "desc", widget: "markdown"}
       - label: Content
         name: content
         widget: list
         field: {label: Item, name: item, widget: string}
+      - {label: "Recommended knowledge for participation", name: "recommendedKnowledge", widget: "text"}
       - name: dates
         label: Dates
         label_singular: Date
@@ -55,3 +52,7 @@ collections:
         fields:
           - {label: Label, name: label, widget: string}
           - {label: Date, name: date, widget: date, format: YYYY-MM-DD}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Icon", name: "icon", widget: "image"}
+      - {label: "Order", name: "order", widget: "number", default: 0}
+      - {label: "Contact", name: "contact", widget: "relation", collection: "contacts", search_fields: ["name", "role"], value_field: "name"} 
