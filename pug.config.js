@@ -1,6 +1,9 @@
 const fs = require('fs')
 const jsYaml = require('js-yaml')
 const readdir = require("readdir-enhanced")
+const indexBy = require('lodash.indexby')
+const map = require('lodash.map')
+const findWhere = require('lodash.findwhere')
  
 const collectionsDir = './src/collections'
 
@@ -17,20 +20,20 @@ collectionsFiles.forEach(relativePath => {
   data.collections[collectionName].push(obj)
 })
 
-function attachModulesToLevels(data) {
-  data.collections.levels.forEach(function (level) {
-    if (level.courses) {
-      level.courses.forEach(function (courseName) {
-        
-      })
+function includeRelatedItems(dataObj, parentCollection, relatedCollection) {
+  let collectionItems = dataObj[parentCollection]
+  collectionItems = map(collectionItems, (item) => {
+    // each of parentCollection
+    if (Object.keys(item).includes(relatedCollection)) {
+      // parentCollection has a key for relatedCollection
+      item[relatedCollection + '_data'] = map(dataObj[relatedCollection], findWhere(dataObj[relatedCollection], {title: item[relatedCollection]}))
     }
+    return item
   })
 }
 
-function includeRelatedItems(parentCollection, relatedCollection) {
-  let collectionItems = data[parentCollection]
-  let subItems = data[relatedCollection]
-}
+includeRelatedItems(data.collections, 'levels', 'modules')
+//console.log(data.collections.levels)
 
 module.exports = {
   locals: data

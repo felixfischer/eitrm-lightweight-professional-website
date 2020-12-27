@@ -6,10 +6,11 @@ site:
   links:
     imprint: https://eitrawmaterials.eu/impressum/
     privacy_policy: https://eitrawmaterials.eu/privacy-policy/
-    facebook: https://www.facebook.com/rawmaterialsacademy/
-    twitter: https://twitter.com/EITRMAcademy
-    instagram: https://www.instagram.com/eitrmacademy/
-    youtube: https://www.youtube.com/channel/UCIeV5Vq4BpVjfD9_7VFwlRw
+    social:
+      facebook: https://www.facebook.com/rawmaterialsacademy/
+      twitter: https://twitter.com/EITRMAcademy
+      instagram: https://www.instagram.com/eitrmacademy/
+      youtube: https://www.youtube.com/channel/UCIeV5Vq4BpVjfD9_7VFwlRw
 
 meta:
   title: *title

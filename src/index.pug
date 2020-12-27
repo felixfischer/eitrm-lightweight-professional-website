@@ -83,25 +83,51 @@ html(lang="en")
                         h2(class="text-3xl leading-12 overline overline-white")= discover_modules.title
                         p(class="intro")= discover_modules.intro
                     for level in collections.levels
-                        if level.courses
+                        if level.modules
                             div
                                 h2(class="text-3xl")= level.title
                                 ul(class="")
-                                    for course in level.courses
+                                    for mod in level.modules_data
                                         li
-                                            div= course
+                                            div
+                                                div= mod.title
+                                                div= mod.summary
+                                            img(src='media'+mod.icon alt=mod.title)
 
                 section(id="contact" class="")
 
                 section(id="partners" class="")
 
 
-            footer(class="")
-                div(id="branding" class="")
-
-                div(id="contact-secondary" class="")
-
-                div(id="social" class="")
-
-                nav(id="nav-secondary" class="")
-                    ul(id="" class="")
+            //- Footer
+            footer.bg-blue.text-white.px-4.pt-12.pb-8
+                div.max-w-6xl.mx-auto
+                    div(class="sm:flex")
+                        //- Contact
+                        div(class="sm:w-1/2 md:w-1/3 lg:w-1/4")
+                            h4.mb-4 #{footer.contact}
+                            div #{site.company}
+                            div
+                                - let href = `mailto:${site.email}`
+                                a(href=href class="text-white hover:text-green umami--click--footer-email") #{site.email}
+                        //- Social Media
+                        div(class="sm:w-1/2 md:w-1/3 lg:w-1/4 mt-8 sm:mt-0")
+                            h4.mb-4 #{footer.connect}
+                            ul.list-none
+                                each url, platform in site.links.social
+                                    li.inline.text-3xl.-ml-1.mr-3
+                                        - let icon = `<span class="icon-${platform}"></span>`
+                                        - let eventClass = 'umami--click--' + platform
+                                        a(href=url target="_blank" rel="noopener" aria-label=platform class=eventClass + " text-white hover:text-teal") !{icon}
+                    div(class='lg:flex flex-row-reverse justify-between items-end')
+                        //- Logo
+                        div(class="lg:w-1/4 py-8 sm:pt-8 sm:pb-12 lg:py-0")
+                            a(href="https://eitrawmaterials.eu/eit-rm-academy/" target="_blank" rel="noopener")
+                                img(src="/media/logo-eitrmacademy.svg" alt="EIT RawMaterials Academy")
+                        //- Service Links
+                        div#service-links
+                            ul.font-bold.uppercase
+                                li.inline-block
+                                    a(href=site.links.privacy_policy target="_blank" rel="noopener" class="text-white hover:text-green icon-arrow-right mr-8 umami--click--privacy") #{footer.privacy_policy}
+                                li.inline-block
+                                    a(href=site.links.imprint target="_blank" rel="noopener" class="text-white hover:text-green icon-arrow-right mr-8 umami--click--imprint") #{footer.imprint}
