@@ -37,12 +37,12 @@ collections:
       - {label: Title, name: title, widget: string}
       - {label: Summary, name: summary, widget: text}
       - {label: Order, name: order, widget: number, default: 0}
-      - name: courses
-        label: Courses
-        label_singular: Course
+      - name: modules
+        label: Modules
+        label_singular: Module
         required: false
         widget: list
-        field: {label: Course, name: course, widget: relation, collection: modules, search_fields: [title], value_field: title}
+        field: {label: Module, name: module, widget: relation, collection: modules, search_fields: [title], value_field: title}
 
   - name: contacts
     label: Contacts
