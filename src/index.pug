@@ -82,9 +82,9 @@ html(lang="en")
                     div(id="modules-intro" class="bg-teal text-white")
                         h2(class="text-3xl leading-12 overline overline-white")= discover_modules.title
                         p(class="intro")= discover_modules.intro
-                    div(id="basic-modules" class="")
-                    div(id="advanced-modules" class="")
-                    div(id="expert-modules" class="")
+                    for level in collections.levels
+                        div
+                            h2(class="text-3xl")= level.title
 
                 section(id="contact" class="")
 

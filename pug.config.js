@@ -16,7 +16,6 @@ collectionsFiles.forEach(relativePath => {
   }
   data.collections[collectionName].push(obj)
 })
-console.log(data)
 
 module.exports = {
   locals: data
