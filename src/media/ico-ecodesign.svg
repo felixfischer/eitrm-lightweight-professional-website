@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="277" height="258" viewBox="0 0 277 258">
+  <defs>
+    <polygon id="path-1" points="0 0 27.142 0 27.142 27.142 0 27.142"/>
+    <polygon id="path-3" points=".175 0 27.317 0 27.317 27.142 .175 27.142"/>
+    <polygon id="path-5" points=".175 .175 27.317 .175 27.317 27.317 .175 27.317"/>
+    <polygon id="path-7" points="0 .175 27.142 .175 27.142 27.317 0 27.317"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" class="web-landing-page">
+    <g class="web-landing-page__rma-lightweight-home" transform="translate(-970 -8116)">
+      <g class="web-landing-page__rma-lightweight-home__ico-ecodesign" transform="translate(970.29 8116.791)">
+        <g class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico" transform="translate(88 79)">
+          <line x1="33.77" x2="64.727" y1="33.77" y2="64.727" stroke="#FFF" stroke-width="5" class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__stroke-37"/>
+          <line x1="64.727" x2="33.77" y1="33.77" y2="64.727" stroke="#FFF" stroke-width="5" class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__stroke-39"/>
+          <path fill="#004494" d="M21.7008597,27.1423593 L43.1175411,43.1174834 L43.1175411,27.5634711 C43.1175411,16.4802851 36.5752064,6.92668345 27.142417,2.54915971 L21.7008597,27.1423593 Z" class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__fill-1"/>
+          <path fill="#668FBF" d="M2.54937133,27.1423593 C6.92670269,36.5749563 16.4803044,43.1174834 27.5634904,43.1174834 L43.1175026,43.1174834 L24.4215999,24.4215807 L2.54937133,27.1423593 Z" class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__fill-3"/>
+          <g class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__group-7">
+            <mask id="mask-2" fill="#fff">
+              <use xlink:href="#path-1"/>
+            </mask>
+            <path fill="#3369A9" d="M27.1423401,2.54937133 C23.6191597,0.914364769 19.693528,0 15.5539738,0 L-3.8475269e-05,0 L12.1250578,17.5666536 L27.1423401,27.1423785 L27.1423401,2.54937133 Z" class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__group-7__fill-5" mask="url(#mask-2)"/>
+          </g>
+          <path fill="#99B4D4" d="M0,0 L0,15.5540123 C0,19.6937588 0.914364769,23.6193905 2.54937133,27.1423785 L27.1423785,27.1423785 L0,0 Z" class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__fill-8"/>
+          <path fill="#668FBF" d="M76.7959252,27.1423593 L55.3792438,43.1174834 L55.3792438,27.5634711 C55.3792438,16.4802851 61.9215786,6.92668345 71.3543679,2.54915971 L76.7959252,27.1423593 Z" class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__fill-10"/>
+          <path fill="#004494" d="M95.9473174,27.1423593 C91.5699861,36.5749563 82.0163844,43.1174834 70.9331984,43.1174834 L55.3791861,43.1174834 L74.0750888,24.4215807 L95.9473174,27.1423593 Z" class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__fill-12"/>
+          <g class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__group-16" transform="translate(71.18)">
+            <mask id="mask-4" fill="#fff">
+              <use xlink:href="#path-3"/>
+            </mask>
+            <path fill="#99B4D4" d="M0.175100949,2.54937133 C3.69808896,0.914364769 7.62391304,0 11.7634672,0 L27.3174795,0 L15.1923832,17.5666536 L0.175100949,27.1423785 L0.175100949,2.54937133 Z" class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__group-16__fill-14" mask="url(#mask-4)"/>
+          </g>
+          <path fill="#3369A9" d="M98.4966887,0 L98.4966887,15.5540123 C98.4966887,19.6937588 97.582324,23.6193905 95.9473174,27.1423785 L71.3543102,27.1423785 L98.4966887,0 Z" class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__fill-17"/>
+          <path fill="#004494" d="M76.7959252,71.3543487 L55.3792438,55.3792246 L55.3792438,70.9332369 C55.3792438,82.0164229 61.9215786,91.5700245 71.3543679,95.9473559 L76.7959252,71.3543487 Z" class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__fill-19"/>
+          <path fill="#668FBF" d="M95.9473174,71.3543487 C91.5699861,61.9217517 82.0163844,55.3792246 70.9331984,55.3792246 L55.3791861,55.3792246 L74.0750888,74.0751273 L95.9473174,71.3543487 Z" class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__fill-21"/>
+          <g class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__group-25" transform="translate(71.18 71.18)">
+            <mask id="mask-6" fill="#fff">
+              <use xlink:href="#path-5"/>
+            </mask>
+            <path fill="#3369A9" d="M0.175100949,24.7680889 C3.69808896,26.4030955 7.62391304,27.3174603 11.7634672,27.3174603 L27.3174795,27.3174603 L15.1923832,9.75061429 L0.175100949,0.175081712 L0.175100949,24.7680889 Z" class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__group-25__fill-23" mask="url(#mask-6)"/>
+          </g>
+          <path fill="#99B4D4" d="M98.4966887,98.4966887 L98.4966887,82.9426765 C98.4966887,78.8029299 97.582324,74.8772982 95.9473174,71.3543102 L71.3543102,71.3543102 L98.4966887,98.4966887 Z" class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__fill-26"/>
+          <path fill="#668FBF" d="M21.7008597,71.3543487 L43.1175411,55.3792246 L43.1175411,70.9332369 C43.1175411,82.0164229 36.5752064,91.5700245 27.142417,95.9473559 L21.7008597,71.3543487 Z" class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__fill-28"/>
+          <path fill="#004494" d="M2.54937133,71.3543487 C6.92670269,61.9217517 16.4803044,55.3792246 27.5634904,55.3792246 L43.1175026,55.3792246 L24.4215999,74.0751273 L2.54937133,71.3543487 Z" class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__fill-30"/>
+          <g class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__group-34" transform="translate(0 71.18)">
+            <mask id="mask-8" fill="#fff">
+              <use xlink:href="#path-7"/>
+            </mask>
+            <path fill="#99B4D4" d="M27.1423401,24.7680889 C23.6191597,26.4030955 19.693528,27.3174603 15.5539738,27.3174603 L-3.8475269e-05,27.3174603 L12.1250578,9.75061429 L27.1423401,0.175081712 L27.1423401,24.7680889 Z" class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__group-34__fill-32" mask="url(#mask-8)"/>
+          </g>
+          <path fill="#3369A9" d="M0,98.4966887 L0,82.9426765 C0,78.8029299 0.914364769,74.8772982 2.54937133,71.3543102 L27.1423785,71.3543102 L0,98.4966887 Z" class="web-landing-page__rma-lightweight-home__ico-ecodesign__ico__fill-35"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

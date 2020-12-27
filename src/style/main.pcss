@@ -1,15 +1,163 @@
+@import './titillium.css';
+@import './fontello.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    h1 {
-        font-size: 200%;
+    html {
+        min-width: 480px;
+        font-family: "Titillium Web", Titillium, sans-serif;
+    }
+    body {
+        min-width: 375px;
+        @apply text-grey;
+    }
+    a {
+        @apply text-teal;
+        transition: background-color 0.2s ease,
+                    color 0.2s ease;
+    }
+    a:hover,
+    a:active {
+        @apply text-blue;
+    }
+    strong {
+        @apply font-bold;
+    }
+    p {
+        @apply leading-7;
+    }
+    h2 {
+        @apply font-bold;
+    }
+    h3 {
+        @apply font-bold;
+    }
+    h4 {
+        @apply font-bold uppercase;
+    }
+    label {
+        @apply block mb-4;
+    }
+    input, select {
+        @apply border mt-2 p-2 w-full;
+        border-radius: 0.125rem;
     }
 }
 
 @layer components {
+    #header-main {
+        background-image: url(../media/bg-header-main.jpg)
+    }
+    #nav-main a + a {
+        @apply ml-6;
+    }
+    .button {
+        @apply bg-teal text-white inline-block px-6 py-3 font-bold text-lg uppercase .corner-sm;
+    }
+    .button:hover {
+        @apply bg-white text-teal;
+    }
+    .intro {
+        @apply text-teal;
+    }
 }
 
 @layer utilities {
+    @responsive {
+        .aspect {
+            position: relative;
+            padding-top: 0;
+            height: 0;
+            overflow: hidden;
+        }
+        .ratio-16-9 {
+            padding-bottom: 56.25%;
+        }
+        .ratio-1-2 {
+            padding-bottom: 50%;
+        }
+        .overline {
+            /* must exist for Tailwind to be happy */
+        }
+        .overline:before {
+            content: '';
+            width: 3.5rem;
+            height: 0.13rem;
+            margin-bottom: 2.5rem;
+            display: block;
+        }
+        .overline-blue:before {
+            @apply bg-blue;
+        }
+        .overline-white:before {
+            @apply bg-white;
+        }
+        .no-overline:before {
+            width: 0;
+            height: 0;
+            margin: 0;
+            display: none;
+        }
+        .bg-imgcover {
+            @apply bg-cover bg-center bg-no-repeat;
+        }
+        .corner-sm {
+            border-radius: .75rem 0;
+            @apply overflow-hidden;
+        }
+        .corner-tl-sm {
+            border-radius-top-left: .75rem;
+            @apply overflow-hidden;
+        }
+        .corner-br-sm {
+            border-radius-bottom-right: .75rem;
+            @apply overflow-hidden;
+        }
+        .corner-base {
+            border-radius: 2rem 0;
+            @apply overflow-hidden;
+        }
+        .corner-tl-base {
+            border-radius-top-left: 2rem;
+            @apply overflow-hidden;
+        }
+        .corner-br-base {
+            border-radius-bottom-right: 2rem;
+            @apply overflow-hidden;
+        }
+        .corner-lg {
+            border-radius: 3.375rem 0;  /* 54px */
+            @apply overflow-hidden;
+        }
+        .corner-tl-lg {
+            border-radius-top-left: 3.375rem;
+            @apply overflow-hidden;
+        }
+        .corner-br-lg {
+            border-radius-bottom-right: 3.375rem;
+            @apply overflow-hidden;
+        }
+        .translate-up {
+            transform: translate(0, calc(-100% - 5rem));
+        }
+        .border-b-15 {
+            border-bottom-width: 15px;
+        }
+        .checkcircle {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            margin-top: -1.25rem;
+        }
+        .checkcircle span::before {
+            @apply bg-white inline-block;
+            border-radius: 100%;
+            width: 2.5rem;
+            height: 2.5rem;
+            line-height: 2.5rem;
+        }
+    }
 }

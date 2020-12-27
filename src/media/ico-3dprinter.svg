@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="277" height="258" viewBox="0 0 277 258">
+  <defs>
+    <polygon id="path-1" points="0 99.786 99.786 99.786 99.786 0 0 0"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" class="web-landing-page">
+    <g class="web-landing-page__rma-lightweight-home" transform="translate(-674 -6669)">
+      <g class="web-landing-page__rma-lightweight-home__ico-3dprinter" transform="translate(674.856 6669.607)">
+        <g class="web-landing-page__rma-lightweight-home__ico-3dprinter__ico" transform="translate(88 79)">
+          <polygon fill="#FFF" points="72.306 76.399 27.48 76.399 27.48 53.011 46.97 53.011 46.97 58.858 52.817 58.858 52.817 51.062 72.306 51.062" class="web-landing-page__rma-lightweight-home__ico-3dprinter__ico__fill-1"/>
+          <polygon fill="#FFF" points="52.817 58.858 49.893 58.858 49.893 76.399 72.306 76.399 72.306 51.062 52.817 51.062" class="web-landing-page__rma-lightweight-home__ico-3dprinter__ico__fill-2"/>
+          <polygon fill="#668FBF" points="46.97 48.529 52.817 48.529 52.817 39.759 46.97 39.759" class="web-landing-page__rma-lightweight-home__ico-3dprinter__ico__fill-3"/>
+          <polygon fill="#99B4D4" points="49.893 48.529 52.817 48.529 52.817 39.759 49.893 39.759" class="web-landing-page__rma-lightweight-home__ico-3dprinter__ico__fill-4"/>
+          <polygon fill="#668FBF" points="41.123 42.682 58.663 42.682 58.663 25.141 41.123 25.141" class="web-landing-page__rma-lightweight-home__ico-3dprinter__ico__fill-5"/>
+          <polygon fill="#99B4D4" points="49.893 42.682 58.663 42.682 58.663 25.141 49.893 25.141" class="web-landing-page__rma-lightweight-home__ico-3dprinter__ico__fill-6"/>
+          <path fill="#004494" d="M0,25.141452 L99.786228,25.141452 L99.786228,7.60090408 L0,7.60090408 L0,25.141452 Z M5.8468493,19.2946027 L93.9395736,19.2946027 L93.9395736,13.4477534 L5.8468493,13.4477534 L5.8468493,19.2946027 Z" class="web-landing-page__rma-lightweight-home__ico-3dprinter__ico__fill-7"/>
+          <polygon fill="#3369A9" points="49.893 7.601 49.893 13.448 93.939 13.448 93.939 19.295 49.893 19.295 49.893 25.141 99.786 25.141 99.786 7.601" class="web-landing-page__rma-lightweight-home__ico-3dprinter__ico__fill-8"/>
+          <polygon fill="#3369A9" points="93.939 79.322 99.786 79.322 99.786 0 93.939 0" class="web-landing-page__rma-lightweight-home__ico-3dprinter__ico__fill-9"/>
+          <polygon fill="#004494" points="0 79.322 5.847 79.322 5.847 0 0 0" class="web-landing-page__rma-lightweight-home__ico-3dprinter__ico__fill-10"/>
+          <polygon fill="#004494" points="0 99.786 99.786 99.786 99.786 70.552 0 70.552" class="web-landing-page__rma-lightweight-home__ico-3dprinter__ico__fill-11"/>
+          <polygon fill="#3369A9" points="49.893 99.786 99.786 99.786 99.786 70.552 49.893 70.552" class="web-landing-page__rma-lightweight-home__ico-3dprinter__ico__fill-12"/>
+          <g class="web-landing-page__rma-lightweight-home__ico-3dprinter__ico__group-25">
+            <path fill="#FFF" d="M55.7399633,82.2456801 C57.3544733,82.2456801 58.6633879,83.5545947 58.6633879,85.1691047 C58.6633879,86.7836147 57.3544733,88.0925294 55.7399633,88.0925294 C54.1254533,88.0925294 52.8165386,86.7836147 52.8165386,85.1691047 C52.8165386,83.5545947 54.1254533,82.2456801 55.7399633,82.2456801" class="web-landing-page__rma-lightweight-home__ico-3dprinter__ico__group-25__fill-13"/>
+            <path fill="#FFF" d="M44.0462647,82.2456801 C45.6607747,82.2456801 46.9696893,83.5545947 46.9696893,85.1691047 C46.9696893,86.7836147 45.6607747,88.0925294 44.0462647,88.0925294 C42.4317547,88.0925294 41.12284,86.7836147 41.12284,85.1691047 C41.12284,83.5545947 42.4317547,82.2456801 44.0462647,82.2456801" class="web-landing-page__rma-lightweight-home__ico-3dprinter__ico__group-25__fill-15"/>
+            <path fill="#FFF" d="M32.3525661,82.2456801 C33.9670761,82.2456801 35.2759907,83.5545947 35.2759907,85.1691047 C35.2759907,86.7836147 33.9670761,88.0925294 32.3525661,88.0925294 C30.7380561,88.0925294 29.4291415,86.7836147 29.4291415,85.1691047 C29.4291415,83.5545947 30.7380561,82.2456801 32.3525661,82.2456801" class="web-landing-page__rma-lightweight-home__ico-3dprinter__ico__group-25__fill-17"/>
+            <path fill="#FFF" d="M85.1691047,82.2456801 C86.7836147,82.2456801 88.0925294,83.5545947 88.0925294,85.1691047 C88.0925294,86.7836147 86.7836147,88.0925294 85.1691047,88.0925294 C83.5545947,88.0925294 82.2456801,86.7836147 82.2456801,85.1691047 C82.2456801,83.5545947 83.5545947,82.2456801 85.1691047,82.2456801" class="web-landing-page__rma-lightweight-home__ico-3dprinter__ico__group-25__fill-19"/>
+            <mask id="mask-2" fill="#fff">
+              <use xlink:href="#path-1"/>
+            </mask>
+            <polygon fill="#CCDAEA" points="11.694 88.093 23.582 88.093 23.582 82.246 11.694 82.246" class="web-landing-page__rma-lightweight-home__ico-3dprinter__ico__group-25__fill-21" mask="url(#mask-2)"/>
+            <polygon fill="#668FBF" points="35.276 30.988 64.51 30.988 64.51 1.754 35.276 1.754" class="web-landing-page__rma-lightweight-home__ico-3dprinter__ico__group-25__fill-23" mask="url(#mask-2)"/>
+            <polygon fill="#99B4D4" points="49.893 30.988 64.51 30.988 64.51 1.754 49.893 1.754" class="web-landing-page__rma-lightweight-home__ico-3dprinter__ico__group-25__fill-24" mask="url(#mask-2)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

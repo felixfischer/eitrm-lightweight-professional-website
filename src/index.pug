@@ -13,41 +13,42 @@ html(lang="en")
         meta(name="theme-color" content="")
         link(rel="stylesheet", href="./style/main.pcss")
         link(rel="shortcut icon" href="/media/ico-favicon.png" type="image/x-icon")
-        // link(rel="preload" href="" as="")
+        //- link(rel="preload" href="" as="")
         script(defer src="./script/main.js")
         script(defer src="https://identity.netlify.com/v1/netlify-identity-widget.js")
 
     body(class="text-base")
         div.container.mx-auto
 
-
-            header(class="")
-                nav(id="nav-main" class="")
+            //- header
+            header(id="header-main" class="bg-cover lg:border-b-16 border-teal")
+                nav(id="nav-main" class="uppercase font-bold")
                     each item in nav.main
-                        a(href=item.href)= item.text
+                        a(href=item.href class="text-white hover:text-teal")= item.text
                 img(src="/media/logo-eitrmacademy.svg" alt="EIT RawMaterials Academy")
                 div(id="cta")
-                    h1=header.title
-                    h2=header.subtitle
-                    a(id="" class="" href=header.cta.href)= header.cta.text
+                    h1(class="text-white text-5xl leading-16 font-bold")= header.title
+                    div(class="text-white text-4xl leading-14")= header.subtitle
+                    a(id="" class="button" href=header.cta.href)= header.cta.text
 
+            //- main section
             main(class="")
                 section(id="about" class="")
-                    h2= about.title
-                    p(class="intro")= about.intro
+                    h2(class="text-3xl leading-12 text-blue overline overline-blue")= about.title
+                    p(class="text-teal text-xl leading-11")= about.intro
                     p(class="")= about.body
 
                 section(id="questions" class="")
                     each question in questions
-                        div
-                            h3= question.q
+                        div(class="text-white bg-teal")
+                            h3(class="font-bold text-3xl leading-12 overline overline-white")= question.q
                             p= question.a
                         div
                             img(src=question.image alt="")
 
                 section(id="course" class="")
                     div(id="at-a-glance" class="")
-                        h2= at_a_glance.title
+                        h2(class="text-3xl leading-12 text-blue overline overline-blue")= at_a_glance.title
                         each item in at_a_glance.properties
                             div !{item.title}
                             div
@@ -55,7 +56,7 @@ html(lang="en")
                         div !{at_a_glance.footnote}
 
                     div(id="overview" class="")
-                        h2= overview.title
+                        h2(class="text-3xl leading-12 text-blue overline overline-blue")= overview.title
                         p(class="intro")= overview.intro
                         ul
                             each prop in overview.properties
@@ -78,7 +79,9 @@ html(lang="en")
 
 
                 section(id="modules" class="")
-                    div(id="modules-intro" class="")
+                    div(id="modules-intro" class="bg-teal text-white")
+                        h2(class="text-3xl leading-12 overline overline-white")= discover_modules.title
+                        p(class="intro")= discover_modules.intro
                     div(id="basic-modules" class="")
                     div(id="advanced-modules" class="")
                     div(id="expert-modules" class="")

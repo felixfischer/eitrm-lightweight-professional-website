@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="277" height="258" viewBox="0 0 277 258">
+  <defs>
+    <polygon id="path-1" points=".022 0 51.714 0 51.714 43.147 .022 43.147"/>
+    <polygon id="path-3" points="0 0 31.824 0 31.824 31.824 0 31.824"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" class="web-landing-page">
+    <g class="web-landing-page__rma-lightweight-home" transform="translate(-379 -8116)">
+      <g class="web-landing-page__rma-lightweight-home__ico-recycling" transform="translate(379.756 8116.808)">
+        <g class="web-landing-page__rma-lightweight-home__ico-recycling__ico" transform="translate(80 73)">
+          <path fill="#004494" d="M60.3324193,10.607372 L53.724955,2.46760302e-05 L44.4184151,2.46760302e-05 C40.1554868,-0.000721013186 36.2048318,2.23591161 34.0119572,5.89144847 L27.8460514,15.91204 L49.7250722,29.8350532 L60.3324193,10.607372 Z" class="web-landing-page__rma-lightweight-home__ico-recycling__ico__fill-1"/>
+          <g class="web-landing-page__rma-lightweight-home__ico-recycling__ico__group-5" transform="translate(53.703)">
+            <mask id="mask-2" fill="#fff">
+              <use xlink:href="#path-1"/>
+            </mask>
+            <path fill="#3369A9" d="M41.4687004,19.1202255 L33.8130322,5.96695595 C31.8648048,2.28407032 28.0344844,-0.0142213635 23.8680227,-0.000114888585 L0.0218790208,-0.000114888585 L17.901017,33.8129824 L7.95600757,39.7799881 L37.5563337,43.1473683 L51.7140492,13.9229635 L41.4687004,19.1202255 Z" class="web-landing-page__rma-lightweight-home__ico-recycling__ico__group-5__fill-3" mask="url(#mask-2)"/>
+          </g>
+          <g class="web-landing-page__rma-lightweight-home__ico-recycling__ico__group-8" transform="translate(83.538 41.769)">
+            <mask id="mask-4" fill="#fff">
+              <use xlink:href="#path-3"/>
+            </mask>
+            <path fill="#004494" d="M23.8680227,0 L0,13.9230132 L9.94500946,31.8240303 L25.8570246,31.8240303 L30.0140386,25.1111489 C32.3225239,21.3738143 32.4304272,16.6805157 30.2964768,12.8409962 L23.8680227,0 Z" class="web-landing-page__rma-lightweight-home__ico-recycling__ico__group-8__fill-6" mask="url(#mask-4)"/>
+          </g>
+          <path fill="#3369A9" d="M69.6150662,73.59307 L69.6150662,63.6480605 L49.7250473,85.5270814 L69.6150662,111.384106 L69.6150662,103.428098 L85.5270814,103.428098 C89.7171625,103.530283 93.590495,101.206383 95.4720908,97.4610927 L109.395104,73.59307 L69.6150662,73.59307 Z" class="web-landing-page__rma-lightweight-home__ico-recycling__ico__fill-9"/>
+          <path fill="#004494" d="M19.8900189,75.5820719 L15.0467993,86.7443505 L21.0993321,97.2283795 C23.344418,101.028119 27.4109323,103.378871 31.8240303,103.428098 L39.7800378,103.428098 L39.7800378,75.5820719 L19.8900189,75.5820719 Z" class="web-landing-page__rma-lightweight-home__ico-recycling__ico__fill-11"/>
+          <path fill="#3369A9" d="M43.7580416,57.6810549 L31.8240303,31.8240303 L0,33.8130322 L11.3751018,40.8660329 L3.97800378,55.692053 C1.92038133,59.4040278 1.92038133,63.9140896 3.97800378,67.6260643 L15.0448103,86.7443505 L19.1859123,79.5600757 L33.9681743,53.9019513 L43.7580416,57.6810549 Z" class="web-landing-page__rma-lightweight-home__ico-recycling__ico__fill-13"/>
+          <circle cx="57.993" cy="55.692" r="7.5" fill="#FFF" class="web-landing-page__rma-lightweight-home__ico-recycling__ico__oval"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

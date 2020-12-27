@@ -1,29 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="114" height="101" viewBox="0 0 114 101">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="277" height="258" viewBox="0 0 277 258">
   <defs>
     <polygon id="path-1" points="0 99.417 112.614 99.417 112.614 0 0 0"/>
   </defs>
   <g fill="none" fill-rule="evenodd" class="web-landing-page">
-    <g class="web-landing-page__rma-lightweight-home" transform="translate(-1346 -8677)">
-      <g class="web-landing-page__rma-lightweight-home__ico-prodsysdesign" transform="translate(1346.137 8677.791)">
-        <path fill="#004494" d="M96.1179746,99.4172185 L91.4462451,99.4172185 L89.5194866,96.0950998 L87.5927281,99.4172185 L58.2338557,99.4172185 L56.3070972,96.0950998 L54.3803387,99.4172185 L25.0214663,99.4172185 L23.0947078,96.0950998 L21.1679494,99.4172185 L16.4962199,99.4172185 C7.40064414,99.4172185 0,92.0165744 0,82.9209987 L0,66.4247788 L112.614194,66.4247788 L112.614194,82.9209987 C112.614194,92.0165744 105.21355,99.4172185 96.1179746,99.4172185" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__fill-1"/>
-        <path fill="#3369A9" d="M58.2338117,99.4172185 L87.5926841,99.4172185 L89.5194426,96.0950998 L91.4462011,99.4172185 L96.1179306,99.4172185 C105.213506,99.4172185 112.61415,92.0165744 112.61415,82.9209987 L112.61415,66.4247788 L56.3070532,66.4247788 L56.3070532,96.0950998 L58.2338117,99.4172185 Z" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__fill-3"/>
-        <mask id="mask-2" fill="#fff">
-          <use xlink:href="#path-1"/>
-        </mask>
-        <polygon fill="#004494" points="13.197 16.936 19.795 16.936 19.795 3.299 13.197 3.299" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__fill-5" mask="url(#mask-2)"/>
-        <polygon fill="#004494" points="53.008 16.936 59.606 16.936 59.606 3.299 53.008 3.299" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__fill-7" mask="url(#mask-2)"/>
-        <polygon fill="#3369A9" points="92.819 16.936 99.417 16.936 99.417 3.299 92.819 3.299" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__fill-8" mask="url(#mask-2)"/>
-        <polygon fill="#004494" points="19.795 36.732 13.197 36.732 13.197 48.562 7.565 54.194 12.23 58.86 16.496 54.594 20.762 58.86 25.427 54.194 19.795 48.562" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__fill-9" mask="url(#mask-2)"/>
-        <polygon fill="#004494" points="59.606 36.732 53.008 36.732 53.008 48.562 47.376 54.194 52.041 58.86 56.307 54.594 60.573 58.86 65.238 54.194 59.606 48.562" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__fill-10" mask="url(#mask-2)"/>
-        <polygon fill="#3369A9" points="99.417 48.562 99.417 36.732 92.819 36.732 92.819 48.562 87.187 54.195 91.852 58.86 96.118 54.594 100.384 58.86 105.049 54.195" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__fill-11" mask="url(#mask-2)"/>
-        <path fill="#CCDAEA" d="M16.4962199,40.0308269 C7.40064414,40.0308269 0,32.6301828 0,23.534607 L0,13.6368751 L32.9924398,13.6368751 L32.9924398,23.534607 C32.9924398,32.6301828 25.5917956,40.0308269 16.4962199,40.0308269" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__fill-12" mask="url(#mask-2)"/>
-        <path fill="#FFF" d="M96.1179746,40.0308269 C87.0223988,40.0308269 79.6217547,32.6301828 79.6217547,23.534607 L79.6217547,13.6368751 L112.614194,13.6368751 L112.614194,23.534607 C112.614194,32.6301828 105.21355,40.0308269 96.1179746,40.0308269" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__fill-13" mask="url(#mask-2)"/>
-        <polygon fill="#3369A9" points="56.307 16.936 59.606 16.936 59.606 3.299 56.307 3.299" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__fill-14" mask="url(#mask-2)"/>
-        <polygon fill="#3369A9" points="59.606 36.732 56.307 36.732 56.307 54.594 60.573 58.86 65.238 54.194 59.606 48.562" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__fill-15" mask="url(#mask-2)"/>
-        <polygon fill="#004494" points="0 6.598 112.614 6.598 112.614 0 0 0" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__fill-16" mask="url(#mask-2)"/>
-        <polygon fill="#3369A9" points="56.307 6.598 112.614 6.598 112.614 0 56.307 0" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__fill-17" mask="url(#mask-2)"/>
-        <path fill="#CCDAEA" d="M56.3070972,40.0308269 C47.2115215,40.0308269 39.8108773,32.6301828 39.8108773,23.534607 L39.8108773,13.6368751 L72.8033171,13.6368751 L72.8033171,23.534607 C72.8033171,32.6301828 65.402673,40.0308269 56.3070972,40.0308269" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__fill-18" mask="url(#mask-2)"/>
-        <path fill="#FFF" d="M56.3070972,40.0308269 C65.402673,40.0308269 72.8033171,32.6301828 72.8033171,23.534607 L72.8033171,13.6368751 L56.3070972,13.6368751 L56.3070972,40.0308269 Z" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__fill-19" mask="url(#mask-2)"/>
+    <g class="web-landing-page__rma-lightweight-home" transform="translate(-1265 -8598)">
+      <g class="web-landing-page__rma-lightweight-home__ico-prodsysdesign" transform="translate(1265.137 8598.791)">
+        <g class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__ico" transform="translate(81 79)">
+          <path fill="#004494" d="M96.1179746,99.4172185 L91.4462451,99.4172185 L89.5194866,96.0950998 L87.5927281,99.4172185 L58.2338557,99.4172185 L56.3070972,96.0950998 L54.3803387,99.4172185 L25.0214663,99.4172185 L23.0947078,96.0950998 L21.1679494,99.4172185 L16.4962199,99.4172185 C7.40064414,99.4172185 6.39488462e-14,92.0165744 6.39488462e-14,82.9209987 L6.39488462e-14,66.4247788 L112.614194,66.4247788 L112.614194,82.9209987 C112.614194,92.0165744 105.21355,99.4172185 96.1179746,99.4172185" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__ico__fill-1"/>
+          <path fill="#3369A9" d="M58.2338117,99.4172185 L87.5926841,99.4172185 L89.5194426,96.0950998 L91.4462011,99.4172185 L96.1179306,99.4172185 C105.213506,99.4172185 112.61415,92.0165744 112.61415,82.9209987 L112.61415,66.4247788 L56.3070532,66.4247788 L56.3070532,96.0950998 L58.2338117,99.4172185 Z" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__ico__fill-3"/>
+          <mask id="mask-2" fill="#fff">
+            <use xlink:href="#path-1"/>
+          </mask>
+          <polygon fill="#004494" points="13.197 16.936 19.795 16.936 19.795 3.299 13.197 3.299" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__ico__fill-5" mask="url(#mask-2)"/>
+          <polygon fill="#004494" points="53.008 16.936 59.606 16.936 59.606 3.299 53.008 3.299" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__ico__fill-7" mask="url(#mask-2)"/>
+          <polygon fill="#3369A9" points="92.819 16.936 99.417 16.936 99.417 3.299 92.819 3.299" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__ico__fill-8" mask="url(#mask-2)"/>
+          <polygon fill="#004494" points="19.795 36.732 13.197 36.732 13.197 48.562 7.565 54.194 12.23 58.86 16.496 54.594 20.762 58.86 25.427 54.194 19.795 48.562" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__ico__fill-9" mask="url(#mask-2)"/>
+          <polygon fill="#004494" points="59.606 36.732 53.008 36.732 53.008 48.562 47.376 54.194 52.041 58.86 56.307 54.594 60.573 58.86 65.238 54.194 59.606 48.562" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__ico__fill-10" mask="url(#mask-2)"/>
+          <polygon fill="#3369A9" points="99.417 48.562 99.417 36.732 92.819 36.732 92.819 48.562 87.187 54.195 91.852 58.86 96.118 54.594 100.384 58.86 105.049 54.195" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__ico__fill-11" mask="url(#mask-2)"/>
+          <path fill="#CCDAEA" d="M16.4962199,40.0308269 C7.40064414,40.0308269 2.91322522e-13,32.6301828 2.91322522e-13,23.534607 L2.91322522e-13,13.6368751 L32.9924398,13.6368751 L32.9924398,23.534607 C32.9924398,32.6301828 25.5917956,40.0308269 16.4962199,40.0308269" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__ico__fill-12" mask="url(#mask-2)"/>
+          <path fill="#FFF" d="M96.1179746,40.0308269 C87.0223988,40.0308269 79.6217547,32.6301828 79.6217547,23.534607 L79.6217547,13.6368751 L112.614194,13.6368751 L112.614194,23.534607 C112.614194,32.6301828 105.21355,40.0308269 96.1179746,40.0308269" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__ico__fill-13" mask="url(#mask-2)"/>
+          <polygon fill="#3369A9" points="56.307 16.936 59.606 16.936 59.606 3.299 56.307 3.299" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__ico__fill-14" mask="url(#mask-2)"/>
+          <polygon fill="#3369A9" points="59.606 36.732 56.307 36.732 56.307 54.594 60.573 58.86 65.238 54.194 59.606 48.562" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__ico__fill-15" mask="url(#mask-2)"/>
+          <polygon fill="#004494" points="0 6.598 112.614 6.598 112.614 0 0 0" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__ico__fill-16" mask="url(#mask-2)"/>
+          <polygon fill="#3369A9" points="56.307 6.598 112.614 6.598 112.614 0 56.307 0" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__ico__fill-17" mask="url(#mask-2)"/>
+          <path fill="#CCDAEA" d="M56.3070972,40.0308269 C47.2115215,40.0308269 39.8108773,32.6301828 39.8108773,23.534607 L39.8108773,13.6368751 L72.8033171,13.6368751 L72.8033171,23.534607 C72.8033171,32.6301828 65.402673,40.0308269 56.3070972,40.0308269" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__ico__fill-18" mask="url(#mask-2)"/>
+          <path fill="#FFF" d="M56.3070972,40.0308269 C65.402673,40.0308269 72.8033171,32.6301828 72.8033171,23.534607 L72.8033171,13.6368751 L56.3070972,13.6368751 L56.3070972,40.0308269 Z" class="web-landing-page__rma-lightweight-home__ico-prodsysdesign__ico__fill-19" mask="url(#mask-2)"/>
+        </g>
       </g>
     </g>
   </g>
