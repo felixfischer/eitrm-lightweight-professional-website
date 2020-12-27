@@ -83,8 +83,13 @@ html(lang="en")
                         h2(class="text-3xl leading-12 overline overline-white")= discover_modules.title
                         p(class="intro")= discover_modules.intro
                     for level in collections.levels
-                        div
-                            h2(class="text-3xl")= level.title
+                        if level.courses
+                            div
+                                h2(class="text-3xl")= level.title
+                                ul(class="")
+                                    for course in level.courses
+                                        li
+                                            div= course
 
                 section(id="contact" class="")
 

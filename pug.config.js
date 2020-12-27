@@ -17,6 +17,21 @@ collectionsFiles.forEach(relativePath => {
   data.collections[collectionName].push(obj)
 })
 
+function attachModulesToLevels(data) {
+  data.collections.levels.forEach(function (level) {
+    if (level.courses) {
+      level.courses.forEach(function (courseName) {
+        
+      })
+    }
+  })
+}
+
+function includeRelatedItems(parentCollection, relatedCollection) {
+  let collectionItems = data[parentCollection]
+  let subItems = data[relatedCollection]
+}
+
 module.exports = {
   locals: data
 }
