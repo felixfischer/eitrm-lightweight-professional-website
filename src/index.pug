@@ -33,11 +33,14 @@ html(lang="en")
 
             //- main section
             main(class="")
+
+                //- About Lightweight Professional Course
                 section(id="about" class="")
                     h2(class="text-3xl leading-12 text-blue overline overline-blue")= about.title
                     p(class="text-teal text-xl leading-11")= about.intro
                     p(class="")= about.body
 
+                //- Questions
                 section(id="questions" class="")
                     each question in questions
                         div(class="text-white bg-teal")
@@ -47,21 +50,24 @@ html(lang="en")
                             img(src=question.image alt="")
 
                 section(id="course" class="")
+
+                    //- Lightweight Professional at a glance
                     div(id="at-a-glance" class="")
                         h2(class="text-3xl leading-12 text-blue overline overline-blue")= at_a_glance.title
                         each item in at_a_glance.properties
                             div !{item.title}
                             div
                                 img(src=item.image)
-                        div !{at_a_glance.footnote}
+                        div.text-sm !{at_a_glance.footnote}
 
+                    //- Course overview
                     div(id="overview" class="")
                         h2(class="text-3xl leading-12 text-blue overline overline-blue")= overview.title
                         p(class="intro")= overview.intro
                         ul
                             each prop in overview.properties
                                 li
-                                    div= prop.term
+                                    div.font-bold= prop.term
                                     if prop.deed
                                         div= prop.deed
                                     if prop.list
@@ -69,35 +75,50 @@ html(lang="en")
                                             each item in prop.list
                                                 li
                                                     if item.title
-                                                        div= item.title
+                                                        div(class="text-blue uppercase font-bold text-lg")= item.title
                                                     if item.intro
-                                                        div= item.intro
+                                                        div(class="text-teal text-lg")= item.intro
                                                     if item.items
-                                                        ul
+                                                        ul.list-disc.list-inside
                                                             each subitem in item.items
                                                                 li= subitem
 
-
+                //- Discover our flexible modules
                 section(id="modules" class="")
                     div(id="modules-intro" class="bg-teal text-white")
                         h2(class="text-3xl leading-12 overline overline-white")= discover_modules.title
-                        p(class="intro")= discover_modules.intro
+                        p(class="text-white text-xl leading-11")= discover_modules.intro
                     for level in collections.levels
-                        if level.modules
+                        if level.modules && level.modules.length > 0
                             div
-                                h2(class="text-3xl")= level.title
+                                h2(class="text-3xl text-blue") #{level.title} Level
+                                p(class="text-teal text-xl leading-11")= level.summary
                                 ul(class="")
-                                    for mod in level.modules_data
+                                    for mod in level.modules
                                         li
                                             div
-                                                div= mod.title
+                                                div(class="text-blue font-bold")= mod.title
                                                 div= mod.summary
                                             img(src='media'+mod.icon alt=mod.title)
-
+                //- Contact
                 section(id="contact" class="")
+                    h2(class="text-3xl leading-12 text-blue overline overline-blue")= contact.title
+                    p(class="text-teal text-xl leading-11")= contact.intro
+                    div
+                        div(class="text-blue font-bold")= contact.person.name
+                        div(class="text-teal")= contact.person.title
+                        div
+                            != marked(contact.person.address, {gfm: true, breaks: true})
+                        div= contact.person.phone
+                        div: a(href='mailto:'+contact.person.email)= contact.person.email
 
+                //- Partners
                 section(id="partners" class="")
-
+                    h2(class="text-3xl leading-12 text-blue overline overline-blue")= partners.title
+                    ul
+                        for partner in partners.items
+                            li: img(src=partner.logo alt=partner.name)
+                        
 
             //- Footer
             footer.bg-blue.text-white.px-4.pt-12.pb-8
@@ -105,14 +126,14 @@ html(lang="en")
                     div(class="sm:flex")
                         //- Contact
                         div(class="sm:w-1/2 md:w-1/3 lg:w-1/4")
-                            h4.mb-4 #{footer.contact}
-                            div #{site.company}
+                            h4.mb-4= footer.contact
+                            div #{site.provider}
                             div
                                 - let href = `mailto:${site.email}`
-                                a(href=href class="text-white hover:text-green umami--click--footer-email") #{site.email}
+                                a(href=href class="text-white hover:text-teal umami--click--footer-email") #{site.email}
                         //- Social Media
                         div(class="sm:w-1/2 md:w-1/3 lg:w-1/4 mt-8 sm:mt-0")
-                            h4.mb-4 #{footer.connect}
+                            h4.mb-4= footer.connect
                             ul.list-none
                                 each url, platform in site.links.social
                                     li.inline.text-3xl.-ml-1.mr-3
@@ -128,6 +149,6 @@ html(lang="en")
                         div#service-links
                             ul.font-bold.uppercase
                                 li.inline-block
-                                    a(href=site.links.privacy_policy target="_blank" rel="noopener" class="text-white hover:text-green icon-arrow-right mr-8 umami--click--privacy") #{footer.privacy_policy}
+                                    a(href=site.links.privacy_policy target="_blank" rel="noopener" class="text-white hover:text-teal icon-arrow-right mr-8 umami--click--privacy") #{footer.privacy_policy}
                                 li.inline-block
-                                    a(href=site.links.imprint target="_blank" rel="noopener" class="text-white hover:text-green icon-arrow-right mr-8 umami--click--imprint") #{footer.imprint}
+                                    a(href=site.links.imprint target="_blank" rel="noopener" class="text-white hover:text-teal icon-arrow-right mr-8 umami--click--imprint") #{footer.imprint}

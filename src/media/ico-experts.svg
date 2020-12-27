@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="274" height="245" viewBox="0 0 274 245">
+  <defs>
+    <polygon id="path-1" points=".128 .135 113.135 .135 113.135 58.899 .128 58.899"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" class="web-landing-page">
+    <g class="web-landing-page__rma-lightweight-home" transform="translate(-1264 -2789)">
+      <g class="web-landing-page__rma-lightweight-home__icon-experts" transform="translate(1264 2789)">
+        <g class="web-landing-page__rma-lightweight-home__icon-experts__group-26" transform="translate(79 72)">
+          <path fill="#004494" d="M25.3449396,40.90434 L25.3449396,77.0676365 C34.0872956,77.0676365 42.5312943,80.2402871 49.1104492,85.996632 L56.9869928,92.8881089 L64.8635364,85.996632 C71.4433562,80.2402871 79.8891283,77.0676365 88.629711,77.0676365 L88.629711,40.90434 L25.3449396,40.90434 Z" class="web-landing-page__rma-lightweight-home__icon-experts__group-26__fill-1"/>
+          <g class="web-landing-page__rma-lightweight-home__icon-experts__group-26__group-10" transform="translate(.356 .087)">
+            <mask id="mask-2" fill="#fff">
+              <use xlink:href="#path-1"/>
+            </mask>
+            <polygon fill="#3068A9" points="56.631 .135 .128 27.39 56.631 58.899 113.135 27.257" class="web-landing-page__rma-lightweight-home__icon-experts__group-26__group-10__fill-8" mask="url(#mask-2)"/>
+          </g>
+          <path fill="#004494" d="M106.710579,56.7256991 L102.189961,56.7256991 L102.189961,33.8980421 L58.3052842,29.2961138 L58.7774246,24.8010266 L104.67701,29.6153073 C105.836082,29.7330099 106.717411,30.7114267 106.710579,31.8755964 L106.710579,56.7256991 Z" class="web-landing-page__rma-lightweight-home__icon-experts__group-26__fill-11"/>
+          <polygon fill="#FFF" points="102.19 56.726 97.67 77.068 111.231 77.068 106.711 56.726" class="web-landing-page__rma-lightweight-home__icon-experts__group-26__fill-13"/>
+          <path fill="#FFF" d="M61.5072608,27.3440015 C61.5072608,29.8403609 59.4841501,31.8643582 56.9869041,31.8643582 C54.4907664,31.8643582 52.4665475,29.8403609 52.4665475,27.3440015 C52.4665475,24.8476422 54.4907664,22.8236449 56.9869041,22.8236449 C59.4841501,22.8236449 61.5072608,24.8476422 61.5072608,27.3440015" class="web-landing-page__rma-lightweight-home__icon-experts__group-26__fill-24"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

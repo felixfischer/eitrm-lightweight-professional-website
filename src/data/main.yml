@@ -27,8 +27,7 @@ contact:
     name: Beate Brede
     title: Head of Talent Recruiting Management
     address: |-
-      Fraunhofer Institute for Manufacturing Technology and
-      Advanced Materials IFAM 
+      Fraunhofer Institute for Manufacturing Technology and Advanced Materials IFAM
       Wiener Straße 12
       28359 Bremen, Germany
     phone: +49-421-2246-685
@@ -81,7 +80,7 @@ questions:
       design, construct and set up processes with specific
       lightweight materials in the correct way to fully
       utilise the potential of lightweight strategies.
-    image: &placeholdimg media/img-placeholder-3x2.svg
+    image: media/img-vr.jpg
   - q: Is this course for you?
     a: >-
       The courses are aimed at employees in idustry whose
@@ -92,19 +91,19 @@ questions:
       managers, engineers and technical staff. The
       advanced and expert levels are for technical
       experts.
-    image: *placeholdimg
+    image: media/img-viewdata.jpg
 
 at_a_glance:
   title: Lightweight Professional at a glance
   properties:
     - title: Online
-      image: *placeholdimg 
+      image: media/ico-online.svg
     - title: Modular
-      image: *placeholdimg 
+      image: media/ico-modular.svg
     - title: Certified Qualification<sup>1</sup>
-      image: *placeholdimg 
+      image: media/ico-certified.svg
     - title: International Experts
-      image: *placeholdimg 
+      image: media/ico-experts.svg
   footnote: >-
     <sup>1</sup> The qualification is certified by an external
     accreditation body.
@@ -263,34 +262,36 @@ discover_modules:
     You can select and build your desired path: starting
     from Basic to Expert Level Certification.
 
-content_providers:
-  - name: Zanardi Fonderie
-    logo: /media/logo-zanardi.svg
-  - name: Università degli Studi di Padova
-    logo: /media/logo-unipadova.svg
-  - name: Mondragan Unibersitatea
-    logo: /media/logo-mondragan.svg
-  - name: Politecnico Milano 1863
-    logo: /media/logo-politecnicomilano.svg
-  - name: KU Leuven
-    logo: /media/logo-kuleuven.svg
-  - name: Kungl Tekniska Högskolan
-    logo: /media/logo-kungl.svg
-  - name: Ghent University
-    logo: /media/logo-unighent.svg
-  - name: Technische Universität Bergakademie Freiberg
-    logo: /media/logo-tufreiberg.svg
-  - name: Fraunhofer LBF
-    logo: /media/logo-fraunhoferlbf.svg
-  - name: Fraunhofer IWKS
-    logo: /media/logo-fraunhoferiwks.svg
-  - name: Fraunhofer Academy
-    logo: /media/logo-fraunhoferacademy.svg
-  - name: Fraunhofer IFAM
-    logo: /media/logo-fraunhoferifam.svg
+partners:
+  title: Content Providers
+  items:
+    - name: Zanardi Fonderie
+      logo: /media/logo-zanardi.svg
+    - name: Università degli Studi di Padova
+      logo: /media/logo-unipadova.svg
+    - name: Mondragan Unibersitatea
+      logo: /media/logo-mondragan.svg
+    - name: Politecnico Milano 1863
+      logo: /media/logo-politecnicomilano.svg
+    - name: KU Leuven
+      logo: /media/logo-kuleuven.svg
+    - name: Kungl Tekniska Högskolan
+      logo: /media/logo-kungl.svg
+    - name: Ghent University
+      logo: /media/logo-unighent.svg
+    - name: Technische Universität Bergakademie Freiberg
+      logo: /media/logo-tufreiberg.svg
+    - name: Fraunhofer LBF
+      logo: /media/logo-fraunhoferlbf.svg
+    - name: Fraunhofer IWKS
+      logo: /media/logo-fraunhoferiwks.svg
+    - name: Fraunhofer Academy
+      logo: /media/logo-fraunhoferacademy.svg
+    - name: Fraunhofer IFAM
+      logo: /media/logo-fraunhoferifam.svg
 
 footer:
-  contact_us: Contact us
-  social_links: Connect with us
+  contact: Contact us
+  connect: Connect with us
   privacy_policy: Privacy Policy
   imprint: Imprint

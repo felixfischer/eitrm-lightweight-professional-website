@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="276" height="245" viewBox="0 0 276 245">
+  <defs>
+    <linearGradient id="linearGradient-1" x1="50%" x2="50%" y1="99.028%" y2="1.543%">
+      <stop offset="0%" stop-color="#FFF" stop-opacity=".005"/>
+      <stop offset="100%" stop-color="#FFF" stop-opacity=".17"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd" class="web-landing-page">
+    <g class="web-landing-page__rma-lightweight-home" transform="translate(-378 -2789)">
+      <g class="web-landing-page__rma-lightweight-home__icon-online" transform="translate(378.75 2789)">
+        <g class="web-landing-page__rma-lightweight-home__icon-online__group-5" transform="translate(69.252 81)">
+          <path fill="#004494" d="M131.88654,81.0139089 L17.1810092,81.0139089 C14.7018858,81.0139089 12.6920927,79.0044069 12.6920927,76.5249924 L12.6920927,4.48920768 C12.6920927,2.00979315 14.7018858,0 17.1810092,0 L131.88654,0 C134.365954,0 136.375456,2.00979315 136.375456,4.48920768 L136.375456,76.5249924 C136.375456,79.0044069 134.365954,81.0139089 131.88654,81.0139089 Z" class="web-landing-page__rma-lightweight-home__icon-online__group-5__stroke-2"/>
+          <path fill="#004494" d="M9.09494702e-13,81.8873523 L9.09494702e-13,84.2147877 C9.09494702e-13,86.3055199 1.69477125,88 3.78521234,88 L145.282453,88 C147.373185,88 149.067665,86.3055199 149.067665,84.2147877 L149.067665,81.8873523 L9.09494702e-13,81.8873523 Z" class="web-landing-page__rma-lightweight-home__icon-online__group-5__stroke-4"/>
+          <path fill="#3369A9" d="M82.7169488,84.2148168 L66.3506584,84.2148168 C65.0652409,84.2148168 64.023223,83.1727989 64.023223,81.8873814 L85.0443842,81.8873814 C85.0443842,83.1727989 84.0023662,84.2148168 82.7169488,84.2148168 Z" class="web-landing-page__rma-lightweight-home__icon-online__group-5__stroke-6"/>
+          <polygon fill="#668FBF" points="17.06 76.572 132.008 76.572 132.008 4.293 17.06 4.293" class="web-landing-page__rma-lightweight-home__icon-online__group-5__stroke-1"/>
+          <polygon fill="url(#linearGradient-1)" points="17.178 76.572 132.181 4.367 17.178 4.367" class="web-landing-page__rma-lightweight-home__icon-online__group-5__stroke-1" opacity=".865"/>
+          <polygon fill="#FFF" points="78.934 29.432 93.601 51.432 64.267 51.432" class="web-landing-page__rma-lightweight-home__icon-online__group-5__triangle" transform="rotate(90 78.934 40.432)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

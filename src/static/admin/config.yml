@@ -37,12 +37,6 @@ collections:
       - {label: Title, name: title, widget: string}
       - {label: Summary, name: summary, widget: text}
       - {label: Order, name: order, widget: number, default: 0}
-      - name: modules
-        label: Modules
-        label_singular: Module
-        required: false
-        widget: list
-        field: {label: Module, name: module, widget: relation, collection: modules, search_fields: [title], value_field: title}
 
   - name: contacts
     label: Contacts
