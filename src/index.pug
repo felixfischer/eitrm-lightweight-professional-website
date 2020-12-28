@@ -18,50 +18,57 @@ html(lang="en")
         script(defer src="https://identity.netlify.com/v1/netlify-identity-widget.js")
 
     body(class="text-base")
-        div.container.mx-auto
+        div(class="mx-auto" style="max-width: 1920px")
 
-            //- header
-            header(id="header-main" class="bg-cover lg:border-b-16 border-teal")
-                nav(id="nav-main" class="uppercase font-bold")
-                    each item in nav.main
-                        a(href=item.href class="text-white hover:text-teal")= item.text
-                img(src="/media/logo-eitrmacademy.svg" alt="EIT RawMaterials Academy")
-                div(id="cta")
-                    h1(class="text-white text-5xl leading-16 font-bold")= header.title
-                    div(class="text-white text-4xl leading-14")= header.subtitle
-                    a(id="" class="button" href=header.cta.href)= header.cta.text
+            //- Header
+            header(id="header-main" class="bg-cover bg-teal lg:bg-header-main lg:bg-imgcover lg:border-b-16 border-teal")
+                //- Cover image
+                div(class="aspect ratio-1-2 bg-header-main bg-imgcover pb-48 lg:hidden")
+                    img(src="/media/logo-eitrmacademy.svg" alt="EIT RawMaterials Academy" class="")
+                //- Main Hero
+                div(class='max-w-6xl mx-auto p-4 pb-16 lg:flex lg:justify-between')
+                    img(src="/media/logo-eitrmacademy.svg" alt="EIT RawMaterials Academy" class="hidden lg:block max-w-lg self-start")
+                    div(class="lg:w-1/2 self-end pt-10 lg:pt-32")
+                        div(id="cta")
+                            h1(class="text-white text-5xl leading-16 font-bold")= header.title
+                            div(class="text-white text-4xl leading-14")= header.subtitle
+                            a(id="" class="button button-white lg:button-teal" href=header.cta.href)= header.cta.text
 
             //- main section
             main(class="")
 
                 //- About Lightweight Professional Course
-                section(id="about" class="")
-                    h2(class="text-3xl leading-12 text-blue overline overline-blue")= about.title
-                    p(class="text-teal text-xl leading-11")= about.intro
-                    p(class="")= about.body
+                section(id="about" class="px-4 py-24")
+                    div(class="max-w-6xl mx-auto")
+                        h2(class="mb-2 text-3xl leading-12 text-blue overline overline-blue")= about.title
+                        p(class="mb-6 text-teal text-xl leading-11")= about.intro
+                        p(class="")= about.body
 
                 //- Questions
-                section(id="questions" class="")
-                    each question in questions
-                        div(class="text-white bg-teal")
-                            h3(class="font-bold text-3xl leading-12 overline overline-white")= question.q
-                            p= question.a
-                        div
-                            img(src=question.image alt="")
+                section(id="questions")
+                    each question, i in questions
+                        div(class="grid grid-cols-2")
+                            - let colStart = i&1 ? 2 : 1
+                            div(style="background-image: url("+question.image+")" class="bg-cover bg-center col-span-1 row-span-1 row-start-1 col-start-"+colStart)
+                                //- img(src=question.image alt="")
+                            - colStart = i&1 ? 1 : 2
+                            div(class="text-white bg-teal col-span-1 row-span-1 py-32 px-48 row-start-1 col-start-"+colStart)
+                                h3(class="font-bold text-3xl leading-12 overline overline-white")= question.q
+                                p= question.a
 
-                section(id="course" class="")
-
+                section(id="course" class="px-4 py-24")
                     //- Lightweight Professional at a glance
-                    div(id="at-a-glance" class="")
+                    div(id="at-a-glance" class="max-w-6xl mx-auto")
                         h2(class="text-3xl leading-12 text-blue overline overline-blue")= at_a_glance.title
-                        each item in at_a_glance.properties
-                            div !{item.title}
-                            div
-                                img(src=item.image)
-                        div.text-sm !{at_a_glance.footnote}
+                        div.flex
+                            each item in at_a_glance.properties
+                                div !{item.title}
+                                div
+                                    img(src=item.image)
+                            div.text-sm !{at_a_glance.footnote}
 
                     //- Course overview
-                    div(id="overview" class="")
+                    div(id="overview" class="max-w-6xl mx-auto")
                         h2(class="text-3xl leading-12 text-blue overline overline-blue")= overview.title
                         p(class="intro")= overview.intro
                         ul
@@ -84,40 +91,43 @@ html(lang="en")
                                                                 li= subitem
 
                 //- Discover our flexible modules
-                section(id="modules" class="")
-                    div(id="modules-intro" class="bg-teal text-white")
-                        h2(class="text-3xl leading-12 overline overline-white")= discover_modules.title
-                        p(class="text-white text-xl leading-11")= discover_modules.intro
+                section(id="modules" class="bg-teal-light")
+                    div.bg-teal.text-white
+                        div(id="modules-intro" class="max-w-6xl mx-auto px-4 py-24")
+                            h2(class="text-3xl leading-12 overline overline-white")= discover_modules.title
+                            p(class="text-white text-xl leading-11")= discover_modules.intro
                     for level in collections.levels
                         if level.modules && level.modules.length > 0
-                            div
+                            div(class="max-w-6xl mx-auto px-4 py-4")
                                 h2(class="text-3xl text-blue") #{level.title} Level
                                 p(class="text-teal text-xl leading-11")= level.summary
-                                ul(class="")
+                                ul(class="grid grid-cols-4 gap-4")
                                     for mod in level.modules
                                         li
+                                            img(src='media'+mod.icon alt=mod.title)
                                             div
                                                 div(class="text-blue font-bold")= mod.title
-                                                div= mod.summary
-                                            img(src='media'+mod.icon alt=mod.title)
+                                                div.text-sm.leading-6= mod.summary
                 //- Contact
-                section(id="contact" class="")
-                    h2(class="text-3xl leading-12 text-blue overline overline-blue")= contact.title
-                    p(class="text-teal text-xl leading-11")= contact.intro
-                    div
-                        div(class="text-blue font-bold")= contact.person.name
-                        div(class="text-teal")= contact.person.title
-                        div
-                            != marked(contact.person.address, {gfm: true, breaks: true})
-                        div= contact.person.phone
-                        div: a(href='mailto:'+contact.person.email)= contact.person.email
+                section(id="contact" class="px-4 py-24")
+                    div(class="max-w-6xl mx-auto")
+                        h2(class="text-3xl leading-12 text-blue overline overline-blue")= contact.title
+                        p(class="text-teal text-xl leading-11")= contact.intro
+                        div(class="bg-teal-lighter p-8")
+                            div(class="text-blue font-bold")= contact.person.name
+                            div(class="text-teal")= contact.person.title
+                            div
+                                != marked(contact.person.address, {gfm: true, breaks: true})
+                            div= contact.person.phone
+                            div: a(href='mailto:'+contact.person.email)= contact.person.email
 
                 //- Partners
-                section(id="partners" class="")
-                    h2(class="text-3xl leading-12 text-blue overline overline-blue")= partners.title
-                    ul
-                        for partner in partners.items
-                            li: img(src=partner.logo alt=partner.name)
+                section(id="partners" class="bg-teal-light px-4 py-24")
+                    div(class="max-w-6xl mx-auto")
+                        h2(class="text-3xl leading-12 text-blue overline overline-blue")= partners.title
+                        ul(class="grid grid-cols-4 gap-x-4 gap-y-5")
+                            for partner in partners.items
+                                li: img(src=partner.logo alt=partner.name)
                         
 
             //- Footer
