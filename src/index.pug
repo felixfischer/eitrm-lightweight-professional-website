@@ -52,7 +52,7 @@ html(lang="en")
                             div(style="background-image: url("+question.image+")" class="bg-cover bg-top col-span-1 row-span-1 row-start-1 col-start-"+colStart)
                                 //- img(src=question.image alt="")
                             - colStart = i&1 ? 1 : 2
-                            div(class="text-white bg-teal bg-vectors-teal bg-imgcover col-span-1 row-span-1 py-32 px-48 row-start-1 col-start-"+colStart)
+                            div(class="text-white bg-teal bg-vectors-teal bg-imgcover col-span-1 row-span-1 py-32 px-32 row-start-1 col-start-"+colStart)
                                 h3(class="font-bold text-3xl leading-12 overline overline-white")= question.q
                                 p= question.a
 
@@ -99,40 +99,41 @@ html(lang="en")
                             h2(class="text-3xl leading-12 overline overline-white mt-4 mb-2")= discover_modules.title
                             p(class="text-white text-xl leading-11")= discover_modules.intro
                     //- Levels
-                    div(class="pt-24")
-                        for level in collections.levels
-                            if level.modules && level.modules.length > 0
+                    for level, i in collections.levels
+                        if level.modules && level.modules.length > 0
+                            div(class="pt-24 pb-32 bg-teal-gradient-"+(i+1))
                                 div(class="max-w-6xl mx-auto px-4 py-4")
                                     //- Level
                                     h2(class="text-3xl text-blue") #{level.title} Level
-                                    p(class="text-teal text-xl leading-11")= level.summary
-                                    ul(class="grid grid-cols-4 gap-4")
+                                    p(class="text-teal text-xl leading-11 mb-8")= level.summary
+                                    - let gridCols = level.modules.length <= 2 ? 2 : 4
+                                    ul(class="corner-base grid gap-4 grid-cols-"+gridCols)
                                         for mod in level.modules
                                             //- Module
                                             li(class="bg-white")
-                                                div(class="bg-vectors-teal-light bg-imgcover")
-                                                    img(src='media'+mod.icon alt=mod.title)
-                                                div
-                                                    div(class="text-blue font-bold")= mod.title
+                                                div(class="bg-vectors-teal-light bg-imgcover text-center")
+                                                    img(class="mx-auto" src='media'+mod.icon alt=mod.title)
+                                                div(class="px-6 py-8")
+                                                    div(class="text-blue font-bold mb-5 leading-6")= mod.title
                                                     div.text-sm.leading-6= mod.summary
                 //- Contact
-                section(id="contact" class="px-4 py-24")
+                section(id="contact" class="px-4 py-32 bg-vectors bg-bottom")
                     div(class="max-w-6xl mx-auto")
-                        h2(class="text-3xl leading-12 text-blue overline overline-blue")= contact.title
-                        p(class="text-teal text-xl leading-11")= contact.intro
-                        div(class="bg-teal-lighter p-8")
+                        h2(class="text-3xl leading-12 mt-4 mb-2 text-blue overline overline-blue")= contact.title
+                        p(class="text-teal text-xl leading-11 mb-12")= contact.intro
+                        div(class="bg-teal-lighter px-12 py-12 corner-lg")
                             div(class="text-blue font-bold")= contact.person.name
                             div(class="text-teal")= contact.person.title
-                            div
+                            div(class="")
                                 != marked(contact.person.address, {gfm: true, breaks: true})
-                            div= contact.person.phone
+                            div(class="mt-8")= contact.person.phone
                             div: a(href='mailto:'+contact.person.email)= contact.person.email
 
                 //- Partners
-                section(id="partners" class="bg-teal-light px-4 py-24")
+                section(id="partners" class="bg-teal-gradient-1 px-4 py-32")
                     div(class="max-w-6xl mx-auto")
-                        h2(class="text-3xl leading-12 text-blue overline overline-blue")= partners.title
-                        ul(class="grid grid-cols-4 gap-x-4 gap-y-5")
+                        h2(class="text-3xl leading-12 text-blue overline overline-blue mb-8")= partners.title
+                        ul(class="grid grid-cols-4 gap-x-4 gap-y-5 corner-lg")
                             for partner in partners.items
                                 li: img(src=partner.logo alt=partner.name)
                         
