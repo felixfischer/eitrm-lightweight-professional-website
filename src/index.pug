@@ -50,7 +50,6 @@ html(lang="en")
                         div(class="grid grid-cols-2")
                             - let colStart = i&1 ? 2 : 1
                             div(style="background-image: url("+question.image+")" class="bg-cover bg-top col-span-1 row-span-1 row-start-1 col-start-"+colStart)
-                                //- img(src=question.image alt="")
                             - colStart = i&1 ? 1 : 2
                             div(class="text-white bg-teal bg-vectors-teal bg-imgcover col-span-1 row-span-1 p-16 lg:p-24 xl:p-32 row-start-1 col-start-"+colStart)
                                 h3(class="font-bold text-3xl leading-12 overline overline-white mb-8")= question.q
@@ -110,18 +109,18 @@ html(lang="en")
                                     ul(class="corner-base grid gap-4 grid-cols-"+gridCols)
                                         for mod, j in level.modules
                                             //- Module
-                                            li(class="bg-white")
+                                            li(class="bg-white" x-data="{ open: false }")
                                                 div(class="bg-vectors-teal-light bg-imgcover text-center")
                                                     img(class="mx-auto" src='media'+mod.icon alt=mod.title)
                                                 div(class="px-6 py-8")
                                                     div(class="text-blue font-bold mb-5 leading-6")= mod.title
                                                     div.text-sm.leading-6.mb-4= mod.summary
-                                                    div.font-bold.uppercase.-ml-2: a(href="#" class="icon-arrow-right") Details
+                                                    div.font-bold.uppercase.-ml-2.cursor-pointer: a(class="icon-arrow-right" @click="open = true") Details
                                                     //- Overlay
-                                                    div(id="overlay-module-"+j class="fixed inset-0 p-4 bg-grey")
+                                                    div(id="overlay-module-"+j class="fixed inset-0 p-4 bg-grey" x-show="open" @click.away="open = false" style="display:none")
                                                         div(class="bg-white shadow-2xl w-full h-full overflow-scroll p-6")
                                                             //- Close Button
-                                                            a(href="" class="fixed right-0 mr-12 icon-cancel-circle text-teal text-3xl bg-white")
+                                                            button(@click="open = false" class="fixed right-0 mr-12 icon-cancel-circle text-teal text-3xl bg-white")
                                                             div(class="font-bold text-3xl text-blue mt-12 mb-4") #{mod.title} (#{level.title} Level)
                                                             div.text-teal.text-xl.leading-11.mb-8= mod.summary
                                                             div.markdown

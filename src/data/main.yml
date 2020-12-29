@@ -202,6 +202,7 @@ modules:
   course_content: Course Content
   recommended_knowledge: Recommended Knowledge for Participation
   no_prior_knowledge: No prior knowledge is required to take this module.
+  dates:  Dates & Registration
 
 discover_modules:
   title: Discover our flexible modules
