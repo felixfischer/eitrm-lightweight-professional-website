@@ -24,16 +24,13 @@ contact:
     For questions regarding the course or registration,
     please contact:
   person:
-    name: Beate Brede
-    title: Head of Talent Recruiting Management
+    name: Andrea Bernards
     address: |-
-      Fraunhofer Institute for Manufacturing Technology and Advanced Materials IFAM
-      Wiener Straße 12
-      28359 Bremen, Germany
-    phone: +49-421-2246-685
-    fax: +49-421-2246-330
-    email: beate.brede@ifam.fraunhofer.de
-    contact_url: https://www.weiterbildung.ifam.fraunhofer.de/en/send-mail?l=en&m=1.d9ef784caaf5821de34b19be0d97f1c4&k=4265617465204272656465&r=2f656e2f66696265722d636f6d706f736974652d746563686e6f6c6f67792f6c696768747765696768742d70726f66657373696f6e616c2f696e74726f647563746f72792d6d6f64756c652e68746d6c
+      Fraunhofer-Institut FIT HCED
+      Schloss Birllinghoven
+      53757 Sankt Augustin, Germany
+    phone: +49-2241 14 3768
+    email: andrea.bernards@fit.fraunhofer.de
 
 nav:
   main:
@@ -202,56 +199,9 @@ levels:
       perspective on an array of related issues. 
 
 modules:
-  - level: 1
-    items:
-    - title: Introductory Module
-      intro: &loremipsum >-
-        Lorem ipsum dolor sit amet, consetetur sadipscing
-        elitr, sed diam nonumy eirmod 
-      image: /media/ico-puzzle.svg
-  - level: 2
-    items:
-    - title: Fiber reinforced plastics
-      intro: *loremipsum
-      image: /media/ico-fiberplastics.svg
-    - title: Powder Metallurgy and Additive Manufacturing
-      intro: *loremipsum
-      image: /media/ico-3dprinter.svg
-    - title: Steel
-      intro: *loremipsum
-      image: /media/ico-steel.svg
-    - title: Magnesium
-      intro: *loremipsum
-      image: /media/ico-magnesium.svg
-    - title: Aluminium Light Alloys
-      intro: *loremipsum
-      image: /media/ico-aluminum.svg
-    - title: Cast Irons
-      intro: *loremipsum
-      image: /media/ico-castirons.svg
-    - title: Polymers
-      intro: *loremipsum
-      image: /media/ico-polymers.svg
-  - level: 3
-    items:
-    - title: Recycling
-      intro: *loremipsum
-      image: /media/ico-recycling.svg
-    - title: Multi-material Design
-      intro: *loremipsum
-      image: /media/ico-multimaterial.svg
-    - title: Eco-Design
-      intro: *loremipsum
-      image: /media/ico-ecodesign.svg
-    - title: Sustainable Materials Usage
-      intro: *loremipsum
-      image: /media/ico-sustainable.svg
-    - title: Ecological Technology Planning
-      intro: *loremipsum
-      image: /media/ico-ecotechplanning.svg
-    - title: Production System Design
-      intro: *loremipsum
-      image: /media/ico-prodsysdesign.svg
+  course_content: Course Content
+  recommended_knowledge: Recommended Knowledge for Participation
+  no_prior_knowledge: No prior knowledge is required to take this module.
 
 discover_modules:
   title: Discover our flexible modules

@@ -14,14 +14,24 @@
         min-width: 375px;
         @apply text-grey;
     }
-    a {
+    a,
+    a::before,
+    a::after {
         @apply text-teal;
         transition: background-color 0.2s ease,
                     color 0.2s ease;
     }
     a:hover,
-    a:active {
+    a:active,
+    a:hover:before,
+    a:active:before {
         @apply text-blue;
+    }
+    a.text-white:before {
+        @apply text-white;
+    }
+    a.text-white:hover:before {
+        @apply text-teal;
     }
     strong {
         @apply font-bold;
@@ -62,6 +72,14 @@
     }
     .overview-table > li:last-of-type {
         border-bottom: solid 1px rgba(0, 68, 148, 0.25);
+    }
+    .markdown {
+        p {
+            @apply mb-4;
+        }
+        ul {
+            @apply list-disc ml-6 mb-4;
+        }
     }
 }
 
