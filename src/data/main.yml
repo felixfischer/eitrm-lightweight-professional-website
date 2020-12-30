@@ -31,6 +31,7 @@ contact:
       53757 Sankt Augustin, Germany
     phone: +49-2241 14 3768
     email: andrea.bernards@fit.fraunhofer.de
+  send_email: Send email
 
 nav:
   main:
@@ -203,6 +204,11 @@ modules:
   recommended_knowledge: Recommended Knowledge for Participation
   no_prior_knowledge: No prior knowledge is required to take this module.
   dates:  Dates & Registration
+  course_regime: >-
+    This online course takes place over a period of four weeks, begins 
+    with a virtual first meeting and ends with a three-day online exam 
+    preparation and a subsequent exam. You will receive all further 
+    information and access codes after registration.
 
 discover_modules:
   title: Discover our flexible modules

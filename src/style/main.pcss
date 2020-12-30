@@ -46,7 +46,7 @@
         @apply font-bold;
     }
     h4 {
-        @apply font-bold uppercase;
+        @apply font-bold
     }
     label {
         @apply block mb-4;
@@ -80,6 +80,13 @@
         ul {
             @apply list-disc ml-6 mb-4;
         }
+    }
+    .bg-vectors-teal .markdown a {
+        @apply text-white font-bold;
+    }
+    .bg-vectors-teal .markdown a:hover,
+    .bg-vectors-teal .markdown a:active {
+        @apply text-white underline;
     }
 }
 

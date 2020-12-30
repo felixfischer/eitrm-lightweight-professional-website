@@ -37,6 +37,7 @@ data.collections = loadCollections()
 includeRelatedItems(data.collections, 'levels', 'modules')
 
 data.marked = require('marked')
+data.filter = _.filter
 
 module.exports = {
   locals: data

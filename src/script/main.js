@@ -1,7 +1,7 @@
 import 'alpinejs'
 
-const data = require('../data/main.yml')
-console.log(data)
+//const data = require('../data/main.yml')
+//(data)
 
 function ready(fn) {
     if (document.readyState != 'loading') {

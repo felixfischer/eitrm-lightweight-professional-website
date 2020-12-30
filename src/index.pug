@@ -117,21 +117,53 @@ html(lang="en")
                                                     div.text-sm.leading-6.mb-4= mod.summary
                                                     div.font-bold.uppercase.-ml-2.cursor-pointer: a(class="icon-arrow-right" @click="open = true") Details
                                                     //- Overlay
-                                                    div(id="overlay-module-"+j class="fixed inset-0 p-4 bg-grey" x-show="open" @click.away="open = false" style="display:none")
-                                                        div(class="bg-white shadow-2xl w-full h-full overflow-scroll p-6")
+                                                    div(id="overlay-module-"+j class="fixed min-w-3xl inset-0 p-4 bg-grey" x-show="open" @click.away="open = false" style="display:none")
+                                                        div(class="bg-white shadow-2xl w-full h-full overflow-scroll")
                                                             //- Close Button
-                                                            button(@click="open = false" class="fixed right-0 mr-12 icon-cancel-circle text-teal text-3xl bg-white")
-                                                            div(class="font-bold text-3xl text-blue mt-12 mb-4") #{mod.title} (#{level.title} Level)
-                                                            div.text-teal.text-xl.leading-11.mb-8= mod.summary
-                                                            div.markdown
-                                                                != marked(mod.desc, {gfm: true, breaks: true})
-                                                            if mod.registerUrl
-                                                                div: a(href=mod.registerUrl class="button") Register for #{mod.title}
-                                                            h3= modules.course_content
-                                                            div.markdown
-                                                                != marked(mod.contents, {gfm: true, breaks: true})
-                                                            h3= modules.recommended_knowledge
-                                                            div= mod.recommendedKnowledge ? mod.recommendedKnowledge : modules.no_prior_knowledge
+                                                            button(@click="open = false" class="fixed right-0 top-0 mr-12 mt-12 icon-cancel-circle text-teal text-3xl bg-white hover:text-blue")
+                                                            div(class="max-w-2xl mx-auto px-4 py-24")
+                                                                //- Module Title/Intro/Summary/Register Button
+                                                                h3(class="font-bold text-3xl text-blue mt-12") #{mod.title} (#{level.title} Level)
+                                                                div.text-teal.text-xl.leading-11.mb-8= mod.summary
+                                                                div.markdown
+                                                                    != marked(mod.desc, {gfm: true, breaks: true})
+                                                                if mod.registerUrl
+                                                                    div: a(href=mod.registerUrl class="button button-teal") Register for #{mod.title}
+                                                                //- Course Content
+                                                                h4(class="mb-4 mt-24 font-bold text-3xl text-blue overline overline-blue")= modules.course_content
+                                                                div.markdown
+                                                                    != marked(mod.contents, {gfm: true, breaks: true})
+                                                            //- Recommended Knowledge
+                                                            div(class="bg-teal-gradient-2")
+                                                                div(class="max-w-2xl mx-auto px-4 py-24")
+                                                                    h3(class="my-4 font-bold text-3xl text-blue mt-12 overline overline-blue")= modules.recommended_knowledge
+                                                                    div.text-teal.text-xl.leading-11.mb-8= mod.recommendedKnowledge ? mod.recommendedKnowledge : modules.no_prior_knowledge
+                                                            //- Dates & Registration
+                                                            if modules.dates
+                                                                div(class="bg-vectors-teal text-white px-4 py-24 bg-imgcover")
+                                                                    div(class="max-w-2xl mx-auto px-4")
+                                                                        h3(class="font-bold text-3xl my-4")= modules.dates
+                                                                        div.markdown 
+                                                                            != marked(mod.dates, {gfm: true, breaks: true})
+                                                            - let moduleContacts = filter(collections.contacts, {name: mod.contacts})
+                                                            - if (moduleContacts.length == 0) {moduleContacts = filter(collections.contacts, {name: 'Beate Brede'})}
+                                                            - let moduleContact = moduleContacts.length == 1 ? moduleContacts[0] : false
+                                                            //- Contact
+                                                            if moduleContact
+                                                                div(class="max-w-2xl mx-auto px-4 py-24")
+                                                                    h3(class="text-3xl leading-12 text-blue overline overline-blue my-4 mb-2")= contact.title
+                                                                    //-if moduleContact.image
+                                                                        img(src='media'+moduleContact.image alt=moduleContact.name)
+                                                                    div.font-bold.text-blue= moduleContact.name
+                                                                    if moduleContact.role
+                                                                        div.text-teal= moduleContact.role
+                                                                    if moduleContact.address
+                                                                        div!= marked(moduleContact.address, {gfm: true, breaks: true})
+                                                                    if moduleContact.phone
+                                                                        div= moduleContact.phone
+                                                                    if moduleContact.contact
+                                                                        div: a(href=moduleContact.contact target="_blank" class="")= contact.send_email
+                                                                    //-pre= JSON.stringify(moduleContact, null, 2)
 
                 //- Contact
                 section(id="contact" class="px-4 py-32 bg-vectors bg-bottom")
@@ -162,14 +194,14 @@ html(lang="en")
                     div(class="sm:flex")
                         //- Contact
                         div(class="sm:w-1/2 md:w-1/3 lg:w-1/4")
-                            h4.mb-4= footer.contact
+                            h4.uppercase.mb-4= footer.contact
                             div #{site.provider}
                             div
                                 - let href = `mailto:${site.email}`
                                 a(href=href class="text-white hover:text-teal umami--click--footer-email") #{site.email}
                         //- Social Media
                         div(class="sm:w-1/2 md:w-1/3 lg:w-1/4 mt-8 sm:mt-0")
-                            h4.mb-4= footer.connect
+                            h4.mb-4.uppercase= footer.connect
                             ul.list-none
                                 each url, platform in site.links.social
                                     li.inline.text-3xl.-ml-1.mr-3
