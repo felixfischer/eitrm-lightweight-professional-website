@@ -7,6 +7,12 @@
   "ascent": 850,
   "glyphs": [
     {
+      "uid": "1145676a91138011729fa2909997af66",
+      "css": "linkedin",
+      "code": 62220,
+      "src": "fontawesome"
+    },
+    {
       "uid": "4743b088aa95d6f3b6b990e770d3b647",
       "css": "facebook",
       "code": 62216,
@@ -59,6 +65,12 @@
       "css": "cancel-circle",
       "code": 59395,
       "src": "iconic"
+    },
+    {
+      "uid": "8da3ac534210aae9c0f0e13804c1df97",
+      "css": "cancel",
+      "code": 59396,
+      "src": "websymbols"
     }
   ]
 }
