@@ -1,5 +1,5 @@
 site:
-  title: &title Lightweight Professional Course
+  title: &title Lightweighting Professional Course
   description: &description Make your future lighter!
   provider: EIT RawMaterials
   email: academy@eitrawmaterials.eu
@@ -11,6 +11,7 @@ site:
       twitter: https://twitter.com/EITRMAcademy
       instagram: https://www.instagram.com/eitrmacademy/
       youtube: https://www.youtube.com/channel/UCIeV5Vq4BpVjfD9_7VFwlRw
+      linkedin: https://www.linkedin.com/school/eitrawmaterials-academy/
 
 meta:
   title: *title
@@ -54,7 +55,7 @@ header:
     href: "#modules"
 
 about:
-  title: About Lightweight Professional Course
+  title: About the Lightweighting Professional Course
   intro: >-
     Reducing the weight of structures has become a critical
     point of focus for many different sectors, such as
@@ -63,7 +64,7 @@ about:
     The appropriate handling of raw materials in lightweight
     design structures is the key success factor for
     preserving resources and reducing costs. Unfortunately,
-    parctical experience often shows that designing and
+    practical experience often shows that designing and
     handling rules for new materials are not being
     respected. The professional training concept underlying
     in the Lightweight Professional courses addresses this
@@ -81,18 +82,18 @@ questions:
     image: media/img-vr.jpg
   - q: Is this course for you?
     a: >-
-      The courses are aimed at employees in idustry whose
+      The courses are aimed at employees in industry whose
       work involves planning the manufacture of
       lightweight products, and at employers who want to
       start manufacturing products based on lightweight
-      concepts. The basic level is designed both for
+      concepts. The basic level is designed for
       managers, engineers and technical staff. The
       advanced and expert levels are for technical
       experts.
     image: media/img-viewdata.jpg
 
 at_a_glance:
-  title: Lightweight Professional at a glance
+  title: Lightweighting Professional at a glance
   properties:
     - title: Online
       image: media/ico-online.svg
@@ -109,13 +110,13 @@ at_a_glance:
 overview:
   title: Course overview
   intro: >-
-    The Lightweight Professional programme is an
+    The Lightweighting Professional programme is an
     international, modular training programme developed by
     leading European lightweight material experts. It
     delivers high quality content and ready-to-use practical
-    knowledge. Participants will exoerience an open
-    atmosphere with the opportunity to exchange experience
-    with other participoants and industrial branches.
+    knowledge. Participants will experience an open
+    atmosphere with the opportunity for exchange
+    with other participants and industrial branches.
   properties:
     - term: Type of Training
       deed: Online Training
@@ -146,10 +147,7 @@ overview:
           intro: Transversal Modules
     - term: Course Fees
       deed: >-
-        Introductory Module (IM): 984€ + 235€ optional
-        examination fee. The registration for all material
-        modules (FRP, PM, ST, MG, AL, CI, PL) is free of
-        charge in 2020!
+        Introductory Module (IM): 984 € + 235 € optional examination fee.
     - term: Certification
       deed: >-
         The courses follow the requirements of ISO EN 17024
@@ -161,7 +159,7 @@ overview:
       list:
         - title: Basic Level Certification
           items:
-            - Completition of Introductory Module and
+            - Completion of Introductory Module and
               successful examination
         - title: Advanced Level Certification
           items:
@@ -170,14 +168,14 @@ overview:
               examination 
         - title: Expert Level Certification
           items:
-            - Completition of Basic Level Certification
-            - Completion of the Advanced Level Certification
+            - Completion of Basic Level Certification
+            - Completion of Advanced Level Certification
             - At least 4 Material Modules and successful
               examination
     - term: Additional Information
       deed: >-
-        Each module of the Lightweight Professional course
-        can be taken individually, regardless of wether or
+        Each module of the Lightweighting Professional course
+        can be taken individually, regardless of whether or
         not you intend to take sufficient modules to be
         awarded one of the Lightweight Professional
         certificates. It is recommended to have previously
@@ -204,6 +202,10 @@ modules:
   recommended_knowledge: Recommended Knowledge for Participation
   no_prior_knowledge: No prior knowledge is required to take this module.
   dates:  Dates & Registration
+  no_registration: >-
+    Applications are not yet open. Register Your Interest 
+    to hear when you can enrol by sending an email to 
+    [academy@eitrawmaterials.eu](mailto:academy@eitrawmaterials.eu).
   course_regime: >-
     This online course takes place over a period of four weeks, begins 
     with a virtual first meeting and ends with a three-day online exam 
@@ -213,7 +215,7 @@ modules:
 discover_modules:
   title: Discover our flexible modules
   intro: >-
-    The Lightweight Professional programme offers an open
+    The Lightweighting Professional programme offers an open
     and flexible design that allows you to pick and choose
     different modules according to your interest and needs.
     You can select and build your desired path: starting

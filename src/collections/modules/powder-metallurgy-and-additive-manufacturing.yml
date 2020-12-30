@@ -1,6 +1,8 @@
 title: Powder Metallurgy and Additive Manufacturing
 level: Advanced
-summary: This module describes, among others, additive manufacturing...
+summary: >-
+  This module gives you an overview of metal powders and how they can be used to
+  produce components that have a lower mass than conventional production routes.
 desc: >-
   This module aims to give you an overview of metal powders and how they can be
   used to produce components that have a lower mass than conventional production
@@ -38,15 +40,13 @@ contents: >-
   * Relationships between manufacturing techniques and optimal powder properties.
 
   * Case studies of additive manufacturing and other powder-based manufacturing techniques.
-recommendedKnowledge: No prior knowledge is required to take this module.
 dates: >-
   Course in 2021:\
 
   First Online meeting: April 07, 2021\
 
-  Synchrone phase: May 05 - May 07, 2021\
-
-  Register here: Beate Brede / +49 421 2246-685 / [Send email](mailto:beate.brede@ifam.fraunhofer.de)
+  Live phase: May 05 - May 07, 2021
+registerUrl: https://www.personenzertifizierung.fraunhofer.de/en/certificates/application-form-lightweight-materials.html
 contacts: Christopher Hulme-Smith
 icon: /ico-3dprinter.svg
 order: 3

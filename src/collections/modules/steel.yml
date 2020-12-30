@@ -2,7 +2,7 @@ title: Steel
 level: Advanced
 summary: In this module, you will acquire knowledge of fundamental and technical
   issues related to steels, from their microstructure and phase transformation
-  to their properties...
+  to their properties and lightweight applications.
 desc: >-
   The aim of the STEEL Module is to give an overview of steel grades and the
   applicable production technologies, depending on the objectives for the
@@ -26,15 +26,12 @@ contents: |-
   * Material characterization
   * Manufacturing methods/technology in theory and practice
   * Case studies
-recommendedKnowledge: ""
 dates: >-
   Course in 2021:\
 
   First Online meeting: September 01, 2021\
 
-  Synchrone phase: September 29 - October 01, 2021\
-
-  Register here: Beate Brede / +49 421 2246-685 / [Send email](mailto:beate.brede@ifam.fraunhofer.de)
+  Live phase: September 29 - October 01, 2021
 contacts: Frank Hoffmann
 icon: /ico-steel.svg
 order: 4

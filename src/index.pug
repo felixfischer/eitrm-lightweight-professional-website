@@ -120,7 +120,7 @@ html(lang="en")
                                                     div(id="overlay-module-"+j class="fixed min-w-3xl inset-0 p-4 bg-grey" x-show="open" @click.away="open = false" style="display:none")
                                                         div(class="bg-white shadow-2xl w-full h-full overflow-scroll")
                                                             //- Close Button
-                                                            button(@click="open = false" class="fixed right-0 top-0 mr-12 mt-12 icon-cancel-circle text-teal text-3xl bg-white hover:text-blue")
+                                                            button(@click="open = false" class="fixed right-0 top-0 mr-12 mt-12 icon-cancel text-teal text-3xl bg-white hover:text-blue")
                                                             div(class="max-w-2xl mx-auto px-4 py-24")
                                                                 //- Module Title/Intro/Summary/Register Button
                                                                 h3(class="font-bold text-3xl text-blue mt-12") #{mod.title} (#{level.title} Level)
@@ -128,7 +128,8 @@ html(lang="en")
                                                                 div.markdown
                                                                     != marked(mod.desc, {gfm: true, breaks: true})
                                                                 if mod.registerUrl
-                                                                    div: a(href=mod.registerUrl class="button button-teal") Register for #{mod.title}
+                                                                    div.text-center
+                                                                        a(href=mod.registerUrl target="_blank" class="mt-12 button bg-teal text-white hover:bg-blue hover:text-white") Register now
                                                                 //- Course Content
                                                                 h4(class="mb-4 mt-24 font-bold text-3xl text-blue overline overline-blue")= modules.course_content
                                                                 div.markdown
@@ -142,28 +143,35 @@ html(lang="en")
                                                             if modules.dates
                                                                 div(class="bg-vectors-teal text-white px-4 py-24 bg-imgcover")
                                                                     div(class="max-w-2xl mx-auto px-4")
-                                                                        h3(class="font-bold text-3xl my-4")= modules.dates
+                                                                        h3(class="font-bold text-3xl my-4 overline overline-white")= modules.dates
                                                                         div.markdown 
                                                                             != marked(mod.dates, {gfm: true, breaks: true})
+                                                                        if mod.registerUrl
+                                                                            div
+                                                                                a(href=mod.registerUrl target="_blank" class="button button-white mt-12") Register now
+                                                                        else
+                                                                            div.markdown
+                                                                                != marked(modules.no_registration, {gfm: true, breaks: true})
                                                             - let moduleContacts = filter(collections.contacts, {name: mod.contacts})
                                                             - if (moduleContacts.length == 0) {moduleContacts = filter(collections.contacts, {name: 'Beate Brede'})}
                                                             - let moduleContact = moduleContacts.length == 1 ? moduleContacts[0] : false
                                                             //- Contact
-                                                            if moduleContact
+                                                            div.bg-vectors.bg-bottom
                                                                 div(class="max-w-2xl mx-auto px-4 py-24")
                                                                     h3(class="text-3xl leading-12 text-blue overline overline-blue my-4 mb-2")= contact.title
-                                                                    //-if moduleContact.image
-                                                                        img(src='media'+moduleContact.image alt=moduleContact.name)
-                                                                    div.font-bold.text-blue= moduleContact.name
-                                                                    if moduleContact.role
-                                                                        div.text-teal= moduleContact.role
-                                                                    if moduleContact.address
-                                                                        div!= marked(moduleContact.address, {gfm: true, breaks: true})
-                                                                    if moduleContact.phone
-                                                                        div= moduleContact.phone
-                                                                    if moduleContact.contact
-                                                                        div: a(href=moduleContact.contact target="_blank" class="")= contact.send_email
-                                                                    //-pre= JSON.stringify(moduleContact, null, 2)
+                                                                    p(class="text-teal text-xl leading-11 mb-12")= contact.intro
+                                                                    div.corner-lg.bg-teal-lighter.p-12
+                                                                        div.font-bold.text-blue= contact.person.name
+                                                                        if contact.person.role
+                                                                            div.text-teal= contact.person.role
+                                                                        if contact.person.address
+                                                                            div.mb-4!= marked(contact.person.address, {gfm: true, breaks: true})
+                                                                        if contact.person.phone
+                                                                            div= contact.person.phone
+                                                                        if contact.person.email
+                                                                            div: a(href='mailto:'+contact.person.email target="_blank" class="")= contact.person.email
+                                                                        if contact.person.contactUrl
+                                                                            div: a(href=contact.person.contactUrl target="_blank" class="")= contact.send_email
 
                 //- Contact
                 section(id="contact" class="px-4 py-32 bg-vectors bg-bottom")
@@ -204,7 +212,7 @@ html(lang="en")
                             h4.mb-4.uppercase= footer.connect
                             ul.list-none
                                 each url, platform in site.links.social
-                                    li.inline.text-3xl.-ml-1.mr-3
+                                    li.inline.text-2xl.-ml-1.mr-3
                                         - let icon = `<span class="icon-${platform}"></span>`
                                         - let eventClass = 'umami--click--' + platform
                                         a(href=url target="_blank" rel="noopener" aria-label=platform class=eventClass + " text-white hover:text-teal") !{icon}

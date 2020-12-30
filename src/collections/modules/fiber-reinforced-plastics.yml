@@ -1,8 +1,8 @@
 title: Fiber Reinforced Plastics
 level: Advanced
-summary: This module provides the participant an overview of the whole lifecycle
-  of a fiber reinforced plastic product, emphasizes its peculiarities from the
-  material selection to the recycling and repairing.
+summary: This module provides the participant with an overview of the whole lifecycle
+  of a fiber reinforced plastic product, emphasizing its peculiarities from
+  material selection to recycling and repairing.
 desc: >-
   The objective of the FRP Module is to give an overview of all key aspects of
   fiber reinforced plastics, which must be taken into account when lightweight
@@ -25,18 +25,13 @@ contents: >-
   * Ageing and recycling
 
   * Health and safety at work and environmental protection
-recommendedKnowledge: No prior knowledge is required to take this module.
 dates: >-
   Course in 2021:\
 
   First Online meeting: March 24, 2021\
 
-  Synchrone phase: April 28 - April 30, 2021\
-
-  Register here: Beate Brede / +49 421 2246-685 / [Send email](mailto:beate.brede@ifam.fraunhofer.de)
-
-
-  The courses take place over a period of four weeks, begin with a virtual first meeting and end with a three-day online exam preparation and a subsequent exam. You will receive all further information and access codes after registration.
+  Live phase: April 28 - April 30, 2021
+registerUrl: https://www.personenzertifizierung.fraunhofer.de/en/certificates/application-form-lightweight-materials.html
 contacts: Dr. Èric Hernández Edo
 icon: /ico-fiberplastics.svg
 order: 2
