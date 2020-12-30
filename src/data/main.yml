@@ -16,7 +16,7 @@ site:
 meta:
   title: *title
   description: *description
-  url: https://lightweight.eitrawmaterials.eu
+  url: https://lightprof.eitrawmaterials.eu/
   image: /media/preview.jpg
 
 contact:
