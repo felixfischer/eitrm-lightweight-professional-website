@@ -51,7 +51,7 @@ header:
   title: *title
   subtitle: *description
   cta:
-    text: See modules and register
+    text: See modules
     href: "#modules"
 
 about:
@@ -202,6 +202,7 @@ modules:
   recommended_knowledge: Recommended Knowledge for Participation
   no_prior_knowledge: No prior knowledge is required to take this module.
   dates:  Dates & Registration
+  registerUrl: https://www.personenzertifizierung.fraunhofer.de/en/certificates/application-form-lightweight-materials.html
   no_registration: >-
     Applications are not yet open. Register Your Interest 
     to hear when you can enrol by sending an email to 
