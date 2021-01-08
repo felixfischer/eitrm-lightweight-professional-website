@@ -51,8 +51,11 @@ header:
   title: *title
   subtitle: *description
   cta:
-    text: See modules
-    href: "#modules"
+    - text: See modules
+      href: "#modules"
+    - text: Register
+      href: "https://www.personenzertifizierung.fraunhofer.de/en/certificates/application-form-lightweight-materials.html"
+      target: "_blank"
 
 about:
   title: About the Lightweighting Professional Course
