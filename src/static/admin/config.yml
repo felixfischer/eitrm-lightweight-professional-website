@@ -95,3 +95,14 @@ collections:
               - {label: Address, name: address, widget: text}
               - {label: Phone, name: phone, widget: string}
           - {label: Call to Action (Send email), name: send_email, widget: string}
+      - name: header
+        label: Header Section
+        file: src/data/header.yml
+        fields:
+          - label: Call-to-Action Buttons
+            name: cta
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: URL, name: href, widget: string}
+              - {label: Open in new tab, name: target_blank, widget: boolean, required: false}
