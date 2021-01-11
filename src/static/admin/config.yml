@@ -156,3 +156,32 @@ collections:
                         required: false
                         widget: list
                         field: {label: Item, name: item, widget: string}
+          - name: modules_section
+            label: Modules Section
+            widget: object
+            fields:
+              - {name: course_content, label: Course Content, widget: string}
+              - {name: recommended_knowledge, label: Recommended Knowledge, widget: string}
+              - {name: no_prior_knowledge, label: No prior knowledge required, widget: string}
+              - {name: dates, label: Dates & Registration, widget: string}
+              - {name: registerUrl, label: Registration URL, widget: string}
+              - {name: no_registration, label: Applications are not open, widget: markdown}
+              - {name: course_regime, label: Course Regime, widget: markdown}
+          - name: discover_modules
+            label: Discover Modules Section
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Intro, name: intro, widget: text}
+      - name: partners
+        label: Partners
+        file: src/data/partners.yml
+        fields:
+          - {label: Title, name: title, widget: string}
+          - name: items
+            label: Partners
+            label_singular: Partner
+            widget: list
+            fields:
+              - {name: name, label: Name, widget: string}
+              - {name: logo, label: Logo, widget: image}

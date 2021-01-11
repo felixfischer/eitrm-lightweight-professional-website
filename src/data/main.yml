@@ -184,22 +184,6 @@ overview:
         certificates. It is recommended to have previously
         completed the Introductory Module.
 
-levels:
-  - title: Basic Level
-    intro: >-
-      The Introductory Module (IM) provides an overview of
-      key aspects of lightweight design and strategies.
-  - title: Advanced Level
-    intro: >-
-      The Advanced Level Material Modules deepen knowledge
-      acquired in the IM by providing 
-  - title: Expert Level
-    intro: >-
-      The Expert Level Transversal Modules extend the
-      knowledge and experience acquired in the Advanced
-      Level by providing a more in-depth product lifecycle
-      perspective on an array of related issues. 
-
 modules:
   course_content: Course Content
   recommended_knowledge: Recommended Knowledge for Participation

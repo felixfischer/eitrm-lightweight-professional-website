@@ -123,3 +123,28 @@ overview:
         awarded one of the Lightweight Professional
         certificates. It is recommended to have previously
         completed the Introductory Module.
+
+modules_section:
+  course_content: Course Content
+  recommended_knowledge: Recommended Knowledge for Participation
+  no_prior_knowledge: No prior knowledge is required to take this module.
+  dates:  Dates & Registration
+  registerUrl: https://www.personenzertifizierung.fraunhofer.de/en/certificates/application-form-lightweight-materials.html
+  no_registration: >-
+    Applications are not yet open. Register Your Interest 
+    to hear when you can enrol by sending an email to 
+    [academy@eitrawmaterials.eu](mailto:academy@eitrawmaterials.eu).
+  course_regime: >-
+    This online course takes place over a period of four weeks, begins 
+    with a virtual first meeting and ends with a three-day online exam 
+    preparation and a subsequent exam. You will receive all further 
+    information and access codes after registration.
+
+discover_modules:
+  title: Discover our flexible modules
+  intro: >-
+    The Lightweighting Professional programme offers an open
+    and flexible design that allows you to pick and choose
+    different modules according to your interest and needs.
+    You can select and build your desired path: starting
+    from Basic to Expert Level Certification.
