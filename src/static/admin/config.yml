@@ -19,6 +19,12 @@ collections:
           - {label: URL, name: url, widget: string}
           - {label: Preview Image, name: preview_image, widget: image}
           - {label: Favicon, name: favicon, widget: image}
+          - label: Social Profiles
+            name: social_links
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: URL, name: href, widget: string}
           - label: Footer Links
             name: footer_links
             widget: list
@@ -26,12 +32,6 @@ collections:
               - {label: Title, name: title, widget: string}
               - {label: URL, name: href, widget: string}
               - {label: Open in new tab, name: target_blank, widget: boolean, required: false}
-          - label: Social Profiles
-            name: social_links
-            widget: list
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: URL, name: href, widget: string}
       - name: contact
         label: Contact Section
         file: src/data/contact.yml
