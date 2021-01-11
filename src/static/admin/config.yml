@@ -106,3 +106,53 @@ collections:
               - {label: Title, name: title, widget: string}
               - {label: URL, name: href, widget: string}
               - {label: Open in new tab, name: target_blank, widget: boolean, required: false}
+      - name: about
+        label: About the Course
+        file: src/data/about.yml
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: text}
+          - {label: Body, name: body, widget: text}
+          - name: questions
+            label: Questions & Answers
+            widget: list
+            fields:
+              - {label: Question, name: q, widget: string}
+              - {label: Answer, name: a, widget: text}
+              - {label: Image, name: image, widget: image}
+          - name: at_a_glance
+            label: At a Glance
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - name: properties
+                label: Course Properties
+                widget: list
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Image, name: image, widget: image}
+              - {label: Footnote, name: footnote, widget: text}
+          - name: overview
+            label: Course Overview Section
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Intro, name: intro, widget: text}
+              - name: properties
+                label: Course Details
+                widget: list
+                fields:
+                  - {label: Name, name: term, widget: string}
+                  - {label: Value, name: deed, widget: text, required: false}
+                  - name: list
+                    label: List
+                    required: false
+                    widget: list
+                    fields: 
+                      - {label: Title, name: title, widget: string}
+                      - {label: Intro, name: intro, widget: text, required: false}
+                      - label: Items
+                        name: items
+                        required: false
+                        widget: list
+                        field: {label: Item, name: item, widget: string}
