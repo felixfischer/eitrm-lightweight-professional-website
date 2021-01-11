@@ -85,4 +85,17 @@ collections:
                 fields:
                   - {label: Title, name: title, widget: string}
                   - {label: URL, name: href, widget: string}
-
+      - name: contact
+        label: Contact Section
+        file: src/data/contact.yml
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: text}
+          - label: Person
+            name: person
+            widget: object
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Address, name: address, widget: text}
+              - {label: Phone, name: phone, widget: string}
+          - {label: Call to Action (Send email), name: send_email, widget: string}
