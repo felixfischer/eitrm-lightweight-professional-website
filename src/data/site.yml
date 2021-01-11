@@ -4,11 +4,12 @@ provider: EIT RawMaterials
 email: academy@eitrawmaterials.eu
 url: https://lightprof.eitrawmaterials.eu/
 preview_image: /preview.jpg
-links:
-  - title: Imprint
-    href: https://eitrawmaterials.eu/impressum/
+favicon: /ico-favicon.png
+footer_links:
   - title: Privacy Policy
     href: https://eitrawmaterials.eu/privacy-policy/
+  - title: Imprint
+    href: https://eitrawmaterials.eu/impressum/
 social_links:
   - title: Facebook
     href: https://www.facebook.com/rawmaterialsacademy/

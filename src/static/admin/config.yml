@@ -4,56 +4,6 @@ backend:
 media_folder: "src/media" # Media files will be stored in the repo under images/uploads
 public_folder: "/" # The src attribute for uploaded media
 collections:
-  - name: modules
-    label: Modules
-    label_singular: Module
-    folder: src/collections/modules
-    extension: yml
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Full Title", name: "fullTitle", widget: "string", required: false}
-      - {label: "Level", name: "level", widget: "relation", collection: "levels", search_fields: ["title", "order"], value_field: "title"} 
-      - {label: "Summary", name: "summary", widget: "text"}
-      - {label: "Description", name: "desc", widget: "markdown"}
-      - {label: "Course contents", name: "contents", widget: "markdown"}
-      - {label: "Recommended knowledge for participation", name: "recommendedKnowledge", widget: "text", required: false}
-      - {label: "Dates and registration", name: "dates", widget: "markdown", required: false}
-      - {label: "Registration URL", name: "registerUrl", widget: "string", required: false}
-      - {label: "Contact", name: "contacts", widget: "relation", collection: "contacts", search_fields: ["name", "role"], value_field: "name", required: false} 
-      - {label: "Image", name: "image", widget: "image", required: false}
-      - {label: "Icon", name: "icon", widget: "image", required: false}
-      - {label: "Order", name: "order", widget: "number", default: 0}
-
-  - name: levels
-    label: Levels
-    label_singular: Level
-    folder: src/collections/levels
-    extension: yml
-    slug: "{{order}}-{{title}}"
-    create: true
-    fields:
-      - {label: Title, name: title, widget: string}
-      - {label: Summary, name: summary, widget: text}
-      - {label: Order, name: order, widget: number, default: 0}
-
-  - name: contacts
-    label: Contacts
-    label_singular: Contact
-    folder: src/collections/contacts
-    extension: yml
-    create: true
-    identifier_field: name
-    fields:
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Role", name: "role", widget: "string", required: false}
-      - {label: "Address", name: "address", widget: "text", required: false}
-      - {label: "Email", name: "email", widget: "string", required: false}
-      - {label: "Phone", name: "phone", widget: "string", required: false}
-      - {label: "Fax", name: "fax", widget: "string", required: false}
-      - {label: "Contact URL", name: "contact", widget: "string", required: false}
-      - {label: "Image", name: "image", widget: "image", required: false}
 
   - name: settings
     label: Settings
@@ -68,8 +18,9 @@ collections:
           - {label: Email, name: email, widget: string}
           - {label: URL, name: url, widget: string}
           - {label: Preview Image, name: preview_image, widget: image}
-          - label: Links
-            name: links
+          - {label: Favicon, name: favicon, widget: image}
+          - label: Footer Links
+            name: footer_links
             widget: list
             fields:
               - {label: Title, name: title, widget: string}
@@ -92,9 +43,12 @@ collections:
             widget: object
             fields:
               - {label: Name, name: name, widget: string}
-              - {label: Address, name: address, widget: text}
-              - {label: Phone, name: phone, widget: string}
+              - {label: Title, name: title, widget: string, required: false}
+              - {label: Address, name: address, widget: markdown, required: false}
+              - {label: Phone, name: phone, widget: string, required: false}
           - {label: Call to Action (Send email), name: send_email, widget: string}
+          - {label: Contact us, name: contact_us, widget: text}
+          - {label: Connect with us, name: connect_with_us, widget: text}
       - name: header
         label: Header Section
         file: src/data/header.yml
@@ -185,3 +139,54 @@ collections:
             fields:
               - {name: name, label: Name, widget: string}
               - {name: logo, label: Logo, widget: image}
+
+  - name: modules
+    label: Modules
+    label_singular: Module
+    folder: src/collections/modules
+    extension: yml
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Full Title", name: "fullTitle", widget: "string", required: false}
+      - {label: "Level", name: "level", widget: "relation", collection: "levels", search_fields: ["title", "order"], value_field: "title"} 
+      - {label: "Summary", name: "summary", widget: "text"}
+      - {label: "Description", name: "desc", widget: "markdown"}
+      - {label: "Course contents", name: "contents", widget: "markdown"}
+      - {label: "Recommended knowledge for participation", name: "recommendedKnowledge", widget: "text", required: false}
+      - {label: "Dates and registration", name: "dates", widget: "markdown", required: false}
+      - {label: "Registration URL", name: "registerUrl", widget: "string", required: false}
+      - {label: "Contact", name: "contacts", widget: "relation", collection: "contacts", search_fields: ["name", "role"], value_field: "name", required: false} 
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Icon", name: "icon", widget: "image", required: false}
+      - {label: "Order", name: "order", widget: "number", default: 0}
+
+  - name: levels
+    label: Levels
+    label_singular: Level
+    folder: src/collections/levels
+    extension: yml
+    slug: "{{order}}-{{title}}"
+    create: true
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Summary, name: summary, widget: text}
+      - {label: Order, name: order, widget: number, default: 0}
+
+  - name: contacts
+    label: Contacts
+    label_singular: Contact
+    folder: src/collections/contacts
+    extension: yml
+    create: true
+    identifier_field: name
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Role", name: "role", widget: "string", required: false}
+      - {label: "Address", name: "address", widget: "text", required: false}
+      - {label: "Email", name: "email", widget: "string", required: false}
+      - {label: "Phone", name: "phone", widget: "string", required: false}
+      - {label: "Fax", name: "fax", widget: "string", required: false}
+      - {label: "Contact URL", name: "contact", widget: "string", required: false}
+      - {label: "Image", name: "image", widget: "image", required: false}
