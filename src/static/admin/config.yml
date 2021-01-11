@@ -54,3 +54,35 @@ collections:
       - {label: "Fax", name: "fax", widget: "string", required: false}
       - {label: "Contact URL", name: "contact", widget: "string", required: false}
       - {label: "Image", name: "image", widget: "image", required: false}
+
+  - name: settings
+    label: Settings
+    files:
+      - name: general
+        label: General Settings
+        file: src/data/general-settings.yml
+        fields:
+          - label: Site
+            name: site
+            widget: object
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: string}
+              - {label: Provider, name: provider, widget: string}
+              - {label: Email, name: email, widget: string}
+              - {label: URL, name: url, widget: string}
+              - {label: Preview Image, name: preview_image, widget: image}
+              - label: Links
+                name: links
+                widget: list
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: URL, name: href, widget: string}
+                  - {label: Open in new tab, name: target_blank, widget: boolean, required: false}
+              - label: Social Profiles
+                name: social_links
+                widget: list
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: URL, name: href, widget: string}
+
