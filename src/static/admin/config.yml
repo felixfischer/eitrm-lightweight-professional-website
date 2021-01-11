@@ -58,33 +58,29 @@ collections:
   - name: settings
     label: Settings
     files:
-      - name: general
-        label: General Settings
-        file: src/data/general-settings.yml
+      - name: site
+        label: Site Settings
+        file: src/data/site.yml
         fields:
-          - label: Site
-            name: site
-            widget: object
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: string}
+          - {label: Provider, name: provider, widget: string}
+          - {label: Email, name: email, widget: string}
+          - {label: URL, name: url, widget: string}
+          - {label: Preview Image, name: preview_image, widget: image}
+          - label: Links
+            name: links
+            widget: list
             fields:
               - {label: Title, name: title, widget: string}
-              - {label: Description, name: description, widget: string}
-              - {label: Provider, name: provider, widget: string}
-              - {label: Email, name: email, widget: string}
-              - {label: URL, name: url, widget: string}
-              - {label: Preview Image, name: preview_image, widget: image}
-              - label: Links
-                name: links
-                widget: list
-                fields:
-                  - {label: Title, name: title, widget: string}
-                  - {label: URL, name: href, widget: string}
-                  - {label: Open in new tab, name: target_blank, widget: boolean, required: false}
-              - label: Social Profiles
-                name: social_links
-                widget: list
-                fields:
-                  - {label: Title, name: title, widget: string}
-                  - {label: URL, name: href, widget: string}
+              - {label: URL, name: href, widget: string}
+              - {label: Open in new tab, name: target_blank, widget: boolean, required: false}
+          - label: Social Profiles
+            name: social_links
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: URL, name: href, widget: string}
       - name: contact
         label: Contact Section
         file: src/data/contact.yml
