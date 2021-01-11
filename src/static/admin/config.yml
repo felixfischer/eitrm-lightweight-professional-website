@@ -47,8 +47,8 @@ collections:
               - {label: Address, name: address, widget: markdown, required: false}
               - {label: Phone, name: phone, widget: string, required: false}
           - {label: Call to Action (Send email), name: send_email, widget: string}
-          - {label: Contact us, name: contact_us, widget: text}
-          - {label: Connect with us, name: connect_with_us, widget: text}
+          - {label: Contact us, name: contact_us, widget: string}
+          - {label: Connect with us, name: connect_with_us, widget: string}
       - name: header
         label: Header Section
         file: src/data/header.yml

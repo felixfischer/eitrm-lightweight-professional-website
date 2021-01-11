@@ -106,11 +106,14 @@ html(lang="en")
                                     //- Level
                                     h2(class="text-3xl text-blue") #{level.title} Level
                                     p(class="text-teal text-xl leading-11 mb-8")= level.summary
+                                    - let modulesInLevel = level.modules.length
                                     - let gridCols = level.modules.length <= 2 ? 2 : 4
-                                    ul(class="corner-base grid gap-4 grid-cols-1 md:grid-cols-"+(gridCols/2) + " lg:grid-cols-"+gridCols)
+                                    - let gridDivider = level.modules.length <= 2 ? 1 : 2
+                                    ul(class="corner-base grid gap-4 grid-cols-1 md:grid-cols-"+(gridCols/gridDivider) + " lg:grid-cols-"+gridCols)
                                         for mod, j in level.modules
                                             //- Module
-                                            li(class="bg-white" x-data="{ open: false }")
+                                            - let colStart = level.modules.length == 1 ? ' col-start-2' : ''
+                                            li(class="bg-white"+colStart x-data="{ open: false }")
                                                 div(class="bg-vectors-teal-square bg-imgcover text-center")
                                                     img(class="mx-auto" src='media'+mod.icon alt=mod.title)
                                                 div(class="px-6 py-8")
