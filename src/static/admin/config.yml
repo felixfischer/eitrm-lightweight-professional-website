@@ -6,7 +6,7 @@ public_folder: "/" # The src attribute for uploaded media
 collections:
 
   - name: settings
-    label: Settings
+    label: Settings & Content
     files:
       - name: site
         label: Site Settings

@@ -123,7 +123,9 @@ html(lang="en")
                                                     div(class="text-blue font-bold mb-5 leading-6")= mod.title
                                                     div.text-sm.leading-6.mb-4= mod.summary
                                                     div.font-bold.uppercase.-ml-2.cursor-pointer: a(class="icon-arrow-right modal-opener" @click="open = true") Details
-                                                    //- Overlay
+                                                    //- ---------------------------------------------------------------------------------------------------------------------------------------------------
+                                                    //- Modal Overlay – PAGE IN PAGE
+                                                    //- ---------------------------------------------------------------------------------------------------------------------------------------------------
                                                     div(id="overlay-module-"+j class="z-10 fixed min-w-3xl inset-0 p-4 bg-grey" x-show="open" @click.away="open = false" style="display:none")
                                                         div(class="bg-white shadow-2xl w-full h-full overflow-scroll")
                                                             //- Close Button
