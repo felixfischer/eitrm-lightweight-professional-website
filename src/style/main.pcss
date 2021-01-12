@@ -137,6 +137,9 @@
         .bg-vectors {
             background-image: url(../media/bg-shapes-neutral.png);
         }
+        .bg-vectors-white-teal {
+            background-image: url(../media/bg-vectors-white-teal.png);
+        }
         .bg-vectors-teal {
             background-image: url(../media/bg-vectors-teal.png);
         }
@@ -224,6 +227,27 @@
         }
         .button-teal:hover {
             @apply bg-white text-teal;
+        }
+        .checklist {
+            line-height: 1.75em;
+            margin-left: 1.75em;
+            li.icon-check::before {
+                margin-left: -2.75em;
+                margin-right: 1em;
+                font-size: 0.65em;
+                width: 1.75em;
+                height: 1.75em;
+                line-height: 1.75em;
+                transform: translateY(-0.2em);
+                @apply inline-block rounded-full bg-white text-blue;
+            }
+        }
+        .header-number {
+            width: 1.75em; 
+            height: 1.75em;
+            line-height: 1.75em;
+            transform: translateY(-0.3em);
+            @apply bg-blue text-white rounded-full inline-block text-center mr-2;
         }
     }
 }

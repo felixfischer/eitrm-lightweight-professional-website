@@ -21,12 +21,12 @@ html(lang="en")
         div(class="mx-auto" style="max-width: 1920px")
 
             //- Header
-            header(id="header-main" class="bg-cover bg-vectors-teal lg:bg-header-main lg:bg-imgcover lg:border-b-16 border-teal")
+            header(id="header-main" class="bg-cover bg-vectors-teal lg:bg-header-main lg:bg-imgcover lg:border-b-8 border-teal")
                 //- Mobile cover image
                 div(class="aspect ratio-1-2 bg-header-main p-6 bg-imgcover lg:hidden")
                     img(src="/media/logo-eitrmacademy.svg" alt="EIT RawMaterials Academy" class="w-1/2 mt-6")
                 //- Main Hero
-                div(class='max-w-6xl mx-auto p-6 lg:p-4 pb-16 lg:flex lg:justify-between')
+                div(class='max-w-6xl mx-auto p-6 lg:p-4 pb-16 lg:pb-16 lg:flex lg:justify-between')
                     img(src="/media/logo-eitrmacademy.svg" alt="EIT RawMaterials Academy" class="hidden lg:block max-w-lg self-start")
                     div(class="lg:w-2/3 self-end mt-16 lg:mt-32 lg:pt-32 lg:pr-12")
                         div(id="cta")
@@ -56,7 +56,7 @@ html(lang="en")
                                 h3(class="font-bold text-3xl leading-12 overline overline-white mb-8")= question.q
                                 p= question.a
 
-                section(id="course" class="px-4 py-24")
+                section(id="course" class="px-4 py-24 bg-vectors-white-teal bg-right-top bg-no-repeat")
                     //- Lightweight Professional at a glance
                     div(id="at-a-glance" class="max-w-6xl mx-auto")
                         h2(class="text-3xl leading-12 text-blue overline overline-blue mb-12")= about.at_a_glance.title
@@ -82,15 +82,15 @@ html(lang="en")
                                         div(class="col-span-3 col-start-1 row-start-2")
                                             ul(class="mt-4 mb-3 md:grid grid-cols-3 gap-4")
                                                 each item in prop.list
-                                                    li(class="bg-teal-light corner-base py-10 px-12 mb-4")
+                                                    li(class="bg-teal-gradient-2 corner-base py-10 px-12 mb-4")
                                                         if item.title
                                                             div(class="text-blue uppercase font-bold text-lg leading-8")= item.title
                                                         if item.intro
                                                             div(class="text-teal text-lg leading-8")= item.intro
                                                         if item.items
-                                                            ul.list-disc.ml-5.mt-4.text-sm
+                                                            ul.ml-5.mt-4.text-sm.checklist
                                                                 each subitem in item.items
-                                                                    li= subitem
+                                                                    li(class="icon-check")= subitem
 
                 //- Discover our flexible modules
                 section(id="modules" class="bg-white")
@@ -102,14 +102,16 @@ html(lang="en")
                     for level, i in collections.levels
                         if level.modules && level.modules.length > 0
                             div(class="pt-24 pb-32 bg-teal-gradient-"+(i+1))
-                                div(class="max-w-6xl mx-auto px-4 py-4")
+                                - let flexOrNot = level.modules.length === 1 ? ' lg:flex' : ''
+                                div(class="max-w-6xl mx-auto px-4 py-4"+flexOrNot)
                                     //- Level
-                                    h2(class="text-3xl text-blue") #{level.title} Level
-                                    p(class="text-teal text-xl leading-11 mb-8")= level.summary
-                                    - let modulesInLevel = level.modules.length
                                     - let gridCols = level.modules.length <= 2 ? 2 : 4
                                     - let gridDivider = level.modules.length <= 2 ? 1 : 2
-                                    ul(class="corner-base grid gap-4 grid-cols-1 md:grid-cols-"+(gridCols/gridDivider) + " lg:grid-cols-"+gridCols)
+                                    div(class=level.modules.length === 1 ? "lg:w-1/2" : '')
+                                        h2(class="text-3xl text-blue leading-12 mb-4") <span class="header-number text-base">#{i+1}</span> #{level.title} Level
+                                        p(class="text-teal text-xl leading-11 mb-8 pr-8")= level.summary
+                                    - let ulClasses = level.modules.length === 1 ? 'lg:w-1/2' : "grid gap-4 grid-cols-1 md:grid-cols-"+(gridCols/gridDivider) + " lg:grid-cols-"+gridCols
+                                    ul(class="corner-base "+ulClasses)
                                         for mod, j in level.modules
                                             //- Module
                                             - let colStart = level.modules.length == 1 ? ' col-start-2' : ''
