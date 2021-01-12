@@ -74,13 +74,13 @@ html(lang="en")
                         p(class="intro text-xl leading-11 mb-12")= about.overview.intro
                         ul.overview-table
                             each prop in about.overview.properties
-                                li(class="md:grid grid-cols-3 border-top-blue py-6")
+                                li(class="lg:grid grid-cols-3 border-top-blue py-6")
                                     div(class="font-bold col-span-1 col-start-1")= prop.term
                                     if prop.deed
                                         div(class="col-span-2 col-start-2")= prop.deed
                                     if prop.list
                                         div(class="col-span-3 col-start-1 row-start-2")
-                                            ul(class="mt-4 mb-3 md:grid grid-cols-3 gap-4")
+                                            ul(class="mt-4 mb-3 lg:grid grid-cols-3 gap-4")
                                                 each item in prop.list
                                                     li(class="bg-teal-gradient-2 corner-base py-10 px-12 mb-4")
                                                         if item.title
@@ -100,21 +100,22 @@ html(lang="en")
                             p(class="text-white text-xl leading-11")= about.discover_modules.intro
                     //- Levels
                     for level, i in collections.levels
+                        - let justOneModule = level.modules.length === 1
                         if level.modules && level.modules.length > 0
                             div(class="pt-24 pb-32 bg-teal-gradient-"+(i+1))
-                                - let flexOrNot = level.modules.length === 1 ? ' lg:flex' : ''
+                                - let flexOrNot = justOneModule ? ' lg:flex' : ''
                                 div(class="max-w-6xl mx-auto px-4 py-4"+flexOrNot)
                                     //- Level
                                     - let gridCols = level.modules.length <= 2 ? 2 : 4
                                     - let gridDivider = level.modules.length <= 2 ? 1 : 2
-                                    div(class=level.modules.length === 1 ? "lg:w-1/2" : '')
+                                    div(class=justOneModule ? "lg:w-1/2" : '')
                                         h2(class="text-3xl text-blue leading-12 mb-4") <span class="header-number text-base">#{i+1}</span> #{level.title} Level
                                         p(class="text-teal text-xl leading-11 mb-8 pr-8")= level.summary
-                                    - let ulClasses = level.modules.length === 1 ? 'lg:w-1/2' : "grid gap-4 grid-cols-1 md:grid-cols-"+(gridCols/gridDivider) + " lg:grid-cols-"+gridCols
+                                    - let ulClasses = justOneModule ? 'lg:w-1/2' : "grid gap-4 grid-cols-1 md:grid-cols-"+(gridCols/gridDivider) + " lg:grid-cols-"+gridCols
                                     ul(class="corner-base "+ulClasses)
                                         for mod, j in level.modules
                                             //- Module
-                                            - let colStart = level.modules.length == 1 ? ' col-start-2' : ''
+                                            - let colStart = justOneModule ? ' col-start-2' : ''
                                             li(class="bg-white"+colStart x-data="{ open: false }")
                                                 div(class="bg-vectors-teal-square bg-imgcover text-center")
                                                     img(class="mx-auto" src='media'+mod.icon alt=mod.title)
@@ -123,7 +124,7 @@ html(lang="en")
                                                     div.text-sm.leading-6.mb-4= mod.summary
                                                     div.font-bold.uppercase.-ml-2.cursor-pointer: a(class="icon-arrow-right" @click="open = true") Details
                                                     //- Overlay
-                                                    div(id="overlay-module-"+j class="fixed min-w-3xl inset-0 p-4 bg-grey" x-show="open" @click.away="open = false" style="display:none")
+                                                    div(id="overlay-module-"+j class="z-10 fixed min-w-3xl inset-0 p-4 bg-grey" x-show="open" @click.away="open = false" style="display:none")
                                                         div(class="bg-white shadow-2xl w-full h-full overflow-scroll")
                                                             //- Close Button
                                                             button(@click="open = false" class="fixed right-0 top-0 mr-12 mt-12 icon-cancel text-teal text-3xl bg-white hover:text-blue")
@@ -131,14 +132,14 @@ html(lang="en")
                                                                 //- Module Title/Intro/Summary/Register Button
                                                                 h3(class="font-bold text-3xl text-blue mt-12") #{mod.title} (#{level.title} Level)
                                                                 div.text-teal.text-xl.leading-11.mb-8= mod.summary
-                                                                div.markdown
+                                                                div.markdown.course-summary
                                                                     != marked(mod.desc, {gfm: true, breaks: true})
                                                                 if mod.registerUrl
                                                                     div.text-center
                                                                         a(href=mod.registerUrl target="_blank" class="mt-12 button bg-teal text-white hover:bg-blue hover:text-white") Register now
                                                                 //- Course Content
                                                                 h4(class="mb-4 mt-24 font-bold text-3xl text-blue overline overline-blue")= about.modules_section.course_content
-                                                                div.markdown
+                                                                div.markdown.course-content
                                                                     != marked(mod.contents, {gfm: true, breaks: true})
                                                             //- Recommended Knowledge
                                                             div(class="bg-teal-gradient-2")

@@ -32,23 +32,6 @@ collections:
               - {label: Title, name: title, widget: string}
               - {label: URL, name: href, widget: string}
               - {label: Open in new tab, name: target_blank, widget: boolean, required: false}
-      - name: contact
-        label: Contact Section
-        file: src/data/contact.yml
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: text}
-          - label: Person
-            name: person
-            widget: object
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Title, name: title, widget: string, required: false}
-              - {label: Address, name: address, widget: markdown, required: false}
-              - {label: Phone, name: phone, widget: string, required: false}
-          - {label: Call to Action (Send email), name: send_email, widget: string}
-          - {label: Contact us, name: contact_us, widget: string}
-          - {label: Connect with us, name: connect_with_us, widget: string}
       - name: header
         label: Header Section
         file: src/data/header.yml
@@ -127,6 +110,23 @@ collections:
             fields:
               - {label: Title, name: title, widget: string}
               - {label: Intro, name: intro, widget: text}
+      - name: contact
+        label: Contact Section
+        file: src/data/contact.yml
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: text}
+          - label: Person
+            name: person
+            widget: object
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Title, name: title, widget: string, required: false}
+              - {label: Address, name: address, widget: markdown, required: false}
+              - {label: Phone, name: phone, widget: string, required: false}
+          - {label: Call to Action (Send email), name: send_email, widget: string}
+          - {label: Contact us, name: contact_us, widget: string}
+          - {label: Connect with us, name: connect_with_us, widget: string}
       - name: partners
         label: Partners
         file: src/data/partners.yml
