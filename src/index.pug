@@ -18,7 +18,7 @@ html(lang="en")
         script(defer src="https://identity.netlify.com/v1/netlify-identity-widget.js")
 
     body(class="text-base" style="min-width: 375px;")
-        div(class="mx-auto" style="max-width: 1920px")
+        div(class="mx-auto" id="wrapper" style="max-width: 1920px")
 
             //- Header
             header(id="header-main" class="bg-cover bg-vectors-teal lg:bg-header-main lg:bg-imgcover lg:border-b-8 border-teal")
@@ -122,12 +122,12 @@ html(lang="en")
                                                 div(class="px-6 py-8")
                                                     div(class="text-blue font-bold mb-5 leading-6")= mod.title
                                                     div.text-sm.leading-6.mb-4= mod.summary
-                                                    div.font-bold.uppercase.-ml-2.cursor-pointer: a(class="icon-arrow-right" @click="open = true") Details
+                                                    div.font-bold.uppercase.-ml-2.cursor-pointer: a(class="icon-arrow-right modal-opener" @click="open = true") Details
                                                     //- Overlay
                                                     div(id="overlay-module-"+j class="z-10 fixed min-w-3xl inset-0 p-4 bg-grey" x-show="open" @click.away="open = false" style="display:none")
                                                         div(class="bg-white shadow-2xl w-full h-full overflow-scroll")
                                                             //- Close Button
-                                                            button(@click="open = false" class="fixed right-0 top-0 mr-12 mt-12 icon-cancel text-teal text-3xl bg-white hover:text-blue")
+                                                            button(@click="open = false" class="modal-closer fixed right-0 top-0 mr-12 mt-12 icon-cancel text-teal text-3xl bg-white hover:text-blue")
                                                             div(class="max-w-2xl mx-auto px-4 py-24")
                                                                 //- Module Title/Intro/Summary/Register Button
                                                                 h3(class="font-bold text-3xl text-blue mt-12") #{mod.title} (#{level.title} Level)
