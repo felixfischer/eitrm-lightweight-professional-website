@@ -27,14 +27,6 @@
     a:active:before {
         @apply text-blue;
     }
-    a.text-white:before,
-    a.button-white:before {
-        @apply text-white;
-    }
-    a.text-white:hover:before,
-    a.button-white:hover:before {
-        @apply text-teal;
-    }
     strong {
         @apply font-bold;
     }
@@ -216,16 +208,20 @@
             height: 2.5rem;
             line-height: 2.5rem;
         }
-        .button-white {
-            @apply bg-white text-teal;
+        .text-white:before,
+        .text-white:hover:before {
+            @apply text-white;
         }
-        .button-white:hover {
+        .button-teal,
+        .button-teal:before,
+        .button-white:hover,
+        .button-white:hover:before {
             @apply bg-teal text-white;
         }
-        .button-teal {
-            @apply bg-teal text-white;
-        }
-        .button-teal:hover {
+        .button-white,
+        .button-white:before,
+        .button-teal:hover,
+        .button-teal:hover:before {
             @apply bg-white text-teal;
         }
         .checklist {
@@ -249,5 +245,21 @@
             transform: translateY(-0.3em);
             @apply bg-blue text-white rounded-full inline-block text-center mr-2;
         }
+        /*
+        @variants focus, hover {
+            a.text-white:before {
+                @apply text-teal;
+            }
+            .button-white,
+            .button-white:before {
+                @apply bg-teal text-white;
+
+            }
+            .button-teal,
+            .button-teal:before {
+                @apply bg-white text-teal;
+            }
+        }
+        */
     }
 }
