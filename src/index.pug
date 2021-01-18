@@ -1,3 +1,4 @@
+- let uploadsDir = './static/uploads'
 doctype html
 html(lang="en")
     head
@@ -7,12 +8,12 @@ html(lang="en")
         meta(property="og:title" content=site.title)
         meta(property="og:description" content=site.description)
         meta(property="og:url" content=site.url)
-        meta(property="og:image" content='./media/'+site.preview_image)
+        meta(property="og:image" content=uploadsDir+site.preview_image)
         meta(name="twitter:card" content="summary_large_image")
         meta(name="viewport", content="width=device-width")
         //- meta(name="theme-color" content="")
         link(rel="stylesheet", href="./style/main.pcss")
-        link(rel="shortcut icon" href='./media/'+site.favicon type="image/x-icon")
+        link(rel="shortcut icon" href=uploadsDir+site.favicon type="image/x-icon")
         //- link(rel="preload" href="" as="")
         script(defer src="./script/main.js")
         script(defer src="https://identity.netlify.com/v1/netlify-identity-widget.js")
@@ -24,10 +25,10 @@ html(lang="en")
             header(id="header-main" class="bg-cover bg-vectors-teal lg:bg-header-main lg:bg-imgcover lg:border-b-8 border-teal")
                 //- Mobile cover image
                 div(class="aspect ratio-1-2 bg-header-main p-6 bg-imgcover lg:hidden")
-                    img(src=site.main_logo alt="EIT RawMaterials Academy" class="w-1/2 mt-6")
+                    img(src=uploadsDir+site.main_logo alt="EIT RawMaterials Academy" class="w-1/2 mt-6")
                 //- Main Hero
                 div(class='max-w-6xl mx-auto p-6 lg:p-4 pb-16 lg:pb-16 lg:flex lg:justify-between')
-                    img(src=site.main_logo alt="EIT RawMaterials Academy" class="hidden lg:block max-w-lg self-start")
+                    img(src=uploadsDir+site.main_logo alt="EIT RawMaterials Academy" class="hidden lg:block max-w-lg self-start")
                     div(class="lg:w-2/3 self-end mt-16 lg:mt-32 lg:pt-32 lg:pr-12")
                         div(id="cta")
                             h1(class="text-white text-5xl leading-16 mb-1 font-bold")= header.headline
@@ -50,7 +51,7 @@ html(lang="en")
                     each question, i in about.questions
                         div(class="lg:grid grid-cols-2")
                             - let colStart = i&1 ? 2 : 1
-                            div(style="min-height: 20rem; background-image: url(./media/"+question.image+")" class="bg-cover bg-top col-span-1 row-span-1 row-start-1 col-start-"+colStart)
+                            div(style="min-height: 20rem; background-image: url("+uploadsDir+question.image+")" class="bg-cover bg-top col-span-1 row-span-1 row-start-1 col-start-"+colStart)
                             - colStart = i&1 ? 1 : 2
                             div(class="text-white bg-teal bg-vectors-teal bg-imgcover col-span-1 row-span-1 px-6 py-24 lg:px-24 xl:p-32 row-start-1 col-start-"+colStart)
                                 h3(class="font-bold text-3xl leading-12 overline overline-white mb-8")= question.q
@@ -64,7 +65,7 @@ html(lang="en")
                             each item in about.at_a_glance.properties
                                 div.bg-vectors-teal-light.bg-cover
                                     div
-                                        img(src=item.image alt="" class="mx-auto")
+                                        img(src=uploadsDir+item.image alt="" class="mx-auto")
                                     div(class="text-center font-bold text-blue uppercase text-lg px-4 leading-8 mb-10") !{item.title}
                         div.text-sm !{about.at_a_glance.footnote}
 
@@ -118,7 +119,7 @@ html(lang="en")
                                             - let colStart = justOneModule ? ' col-start-2' : ''
                                             li(class="bg-white"+colStart x-data="{ open: false }")
                                                 div(class="bg-vectors-teal-square bg-imgcover text-center")
-                                                    img(class="mx-auto" src='media'+mod.icon alt=mod.title)
+                                                    img(class="mx-auto" src=uploadsDir+mod.icon alt=mod.title)
                                                 div(class="px-6 py-8")
                                                     div(class="text-blue font-bold mb-5 leading-6")= mod.title
                                                     div.text-sm.leading-6.mb-4= mod.summary
@@ -205,7 +206,7 @@ html(lang="en")
                         h2(class="text-3xl leading-12 text-blue overline overline-blue mb-8")= partners.title
                         ul(class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-5 corner-base lg:corner-lg")
                             for partner in partners.items
-                                li: img(src='./media/'+partner.logo alt=partner.name)
+                                li: img(src=uploadsDir+partner.logo alt=partner.name)
                         
 
             //- Footer
@@ -232,7 +233,7 @@ html(lang="en")
                         //- Logo
                         div(class="lg:w-1/4 py-8 sm:pt-8 sm:pb-12 lg:py-0")
                             a(href="https://eitrawmaterials.eu/eit-rm-academy/" target="_blank" rel="noopener")
-                                img(src=site.main_logo alt="EIT RawMaterials Academy")
+                                img(src=uploadsDir+site.main_logo alt="EIT RawMaterials Academy")
                         //- Service Links
                         div#service-links
                             ul.font-bold.uppercase

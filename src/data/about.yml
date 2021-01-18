@@ -39,13 +39,13 @@ at_a_glance:
   title: Lightweighting Professional at a glance
   properties:
     - title: Online
-      image: media/ico-online.svg
+      image: /ico-online.svg
     - title: Modular
-      image: media/ico-modular.svg
+      image: /ico-modular.svg
     - title: Certified Qualification<sup>1</sup>
-      image: media/ico-certified.svg
+      image: /ico-certified.svg
     - title: International Experts
-      image: media/ico-experts.svg
+      image: /ico-experts.svg
   footnote: >-
     <sup>1</sup> The qualification is certified by an external
     accreditation body.
