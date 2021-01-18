@@ -24,10 +24,10 @@ html(lang="en")
             header(id="header-main" class="bg-cover bg-vectors-teal lg:bg-header-main lg:bg-imgcover lg:border-b-8 border-teal")
                 //- Mobile cover image
                 div(class="aspect ratio-1-2 bg-header-main p-6 bg-imgcover lg:hidden")
-                    img(src="/media/logo-eitrmacademy.svg" alt="EIT RawMaterials Academy" class="w-1/2 mt-6")
+                    img(src=site.main_logo alt="EIT RawMaterials Academy" class="w-1/2 mt-6")
                 //- Main Hero
                 div(class='max-w-6xl mx-auto p-6 lg:p-4 pb-16 lg:pb-16 lg:flex lg:justify-between')
-                    img(src="/media/logo-eitrmacademy.svg" alt="EIT RawMaterials Academy" class="hidden lg:block max-w-lg self-start")
+                    img(src=site.main_logo alt="EIT RawMaterials Academy" class="hidden lg:block max-w-lg self-start")
                     div(class="lg:w-2/3 self-end mt-16 lg:mt-32 lg:pt-32 lg:pr-12")
                         div(id="cta")
                             h1(class="text-white text-5xl leading-16 mb-1 font-bold")= header.headline
@@ -232,7 +232,7 @@ html(lang="en")
                         //- Logo
                         div(class="lg:w-1/4 py-8 sm:pt-8 sm:pb-12 lg:py-0")
                             a(href="https://eitrawmaterials.eu/eit-rm-academy/" target="_blank" rel="noopener")
-                                img(src="/media/logo-eitrmacademy.svg" alt="EIT RawMaterials Academy")
+                                img(src=site.main_logo alt="EIT RawMaterials Academy")
                         //- Service Links
                         div#service-links
                             ul.font-bold.uppercase
