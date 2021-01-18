@@ -17,6 +17,7 @@ collections:
           - {label: Provider, name: provider, widget: string}
           - {label: Email, name: email, widget: string}
           - {label: URL, name: url, widget: string}
+          - {label: Main Logo, name: main_logo, widget: image}
           - {label: Preview Image, name: preview_image, widget: image}
           - {label: Favicon, name: favicon, widget: image}
           - label: Social Profiles
