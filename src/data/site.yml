@@ -3,14 +3,9 @@ description: Make your future lighter!
 provider: EIT RawMaterials
 email: academy@eitrawmaterials.eu
 url: https://lightprof.eitrawmaterials.eu/
-main_logo: /media/logo-eitrmacademy.svg
+main_logo: /eitrm_academy_portrait_rgb_reversed.svg
 preview_image: /preview.jpg
 favicon: /ico-favicon.png
-footer_links:
-  - title: Imprint
-    href: https://eitrawmaterials.eu/impressum/
-  - title: Privacy Policy
-    href: https://eitrawmaterials.eu/privacy-policy/
 social_links:
   - title: Facebook
     href: https://www.facebook.com/rawmaterialsacademy/
@@ -22,3 +17,8 @@ social_links:
     href: https://www.youtube.com/channel/UCIeV5Vq4BpVjfD9_7VFwlRw
   - title: LinkedIn
     href: https://www.linkedin.com/school/eitrawmaterials-academy/
+footer_links:
+  - title: Imprint
+    href: https://eitrawmaterials.eu/impressum/
+  - title: Privacy Policy
+    href: https://eitrawmaterials.eu/privacy-policy/
