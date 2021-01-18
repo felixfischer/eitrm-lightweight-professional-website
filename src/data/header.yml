@@ -1,5 +1,6 @@
 headline: Lightweighting Professional Course
 subtitle: Make your future lighter!
+background_image: /bg-header-main.jpg
 cta:
   - title: See modules
     href: "#modules"

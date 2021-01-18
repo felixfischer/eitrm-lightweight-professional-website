@@ -1,3 +1,10 @@
+const fs = require('fs')
+const jsYaml = require('js-yaml')
+const headerConfigFile = './src/data/header.yml'
+const headerConfig = jsYaml.safeLoad(fs.readFileSync(headerConfigFile, 'utf8'))
+const netlifyCmsConfigFile = './src/static/admin/config.yml'
+const netlifyCmsConfig = jsYaml.safeLoad(fs.readFileSync(netlifyCmsConfigFile, 'utf8'))
+
 module.exports = {
     future: {
         removeDeprecatedGapUtilities: true,
@@ -57,7 +64,11 @@ module.exports = {
             16: '4.5rem', // 72
             20: '5.6875rem', // 91
         },
-        extend: {},
+        extend: {
+            backgroundImage: theme => ({
+                'main-header': "url(" + netlifyCmsConfig.media_folder + headerConfig.background_image + ")"
+            })
+        },
     },
     variants: {},
     plugins: [],

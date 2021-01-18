@@ -37,6 +37,9 @@ collections:
         label: Header Section
         file: src/data/header.yml
         fields:
+          - {label: Headline, name: headline, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Background Image, name: background_image, widget: image}
           - label: Call-to-Action Buttons
             name: cta
             widget: list
