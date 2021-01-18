@@ -3,9 +3,9 @@ const jsYaml = require('js-yaml')
 const readdir = require('readdir-enhanced')
 const _ = require('lodash')
  
-const dataFile = './src/data/main.yaml'
 const collectionsDir = './src/collections'
 const dataDir = './src/data'
+const netlifyCmsConfigFile = './src/static/admin/config.yml'
 
 function loadFolderCollections() {
   let collectionsFiles = readdir.sync(collectionsDir, { filter: '**/*.yml', deep: 1 })
@@ -44,12 +44,12 @@ function includeRelatedItems(dataObj, parentCollection, relatedCollection) {
   })
 }
 
-// let data = jsYaml.safeLoad(fs.readFileSync(dataFile, 'utf8'))
 let data = loadFileCollections()
-//console.log(JSON.stringify(data, null, 2))
 data.collections = loadFolderCollections()
+data.netlifyCmsConfig = jsYaml.safeLoad(fs.readFileSync(netlifyCmsConfigFile, 'utf8'))
 includeRelatedItems(data.collections, 'levels', 'modules')
 
+//console.log(JSON.stringify(data.netlifyCmsConfig, null, 2))
 
 data.marked = require('marked')
 data.filter = _.filter
