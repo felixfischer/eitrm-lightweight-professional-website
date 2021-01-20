@@ -19,9 +19,9 @@ html(lang="en")
         script(defer src="https://identity.netlify.com/v1/netlify-identity-widget.js")
 
     body(class="text-base" style="min-width: 375px;")
-        div(class="mx-auto" id="wrapper" style="max-width: 1920px")
+        div(class="mx-auto" id="wrapper" style="max-width: 1280px")
             //- Header
-            header(id="header-main" class="relative bg-cover bg-vectors-teal lg:border-b-8 border-teal")
+            header(id="header-main" class="relative bg-cover bg-vectors-teal overflow-hidden lg:border-b-8 border-teal")
                 img(alt="" src=uploadsDir+header.background_image class="absolute object-cover hidden lg:block min-w-full min-h-full")
                 //- Mobile cover image
                 div(class="aspect ratio-1-2 lg:hidden bg-headerimg relative")
