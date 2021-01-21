@@ -207,7 +207,7 @@ html(lang="en")
                         h2(class="text-3xl leading-12 text-blue overline overline-blue mb-8")= partners.title
                         ul(class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-5 corner-base lg:corner-lg")
                             for partner in partners.items
-                                li: img(src=uploadsDir+partner.logo alt=partner.name)
+                                li: img(src=uploadsDir+partner.logo alt=partner.name class="w-full")
                         
 
             //- Footer
@@ -234,7 +234,7 @@ html(lang="en")
                         //- Logo
                         div(class="lg:w-1/4 py-8 sm:pt-8 sm:pb-12 lg:py-0")
                             a(href="https://eitrawmaterials.eu/eit-rm-academy/" target="_blank" rel="noopener")
-                                img(src=uploadsDir+site.main_logo alt="EIT RawMaterials Academy")
+                                img(src=uploadsDir+site.footer_logo alt="EIT RawMaterials Academy")
                         //- Service Links
                         div#service-links
                             ul.font-bold.uppercase

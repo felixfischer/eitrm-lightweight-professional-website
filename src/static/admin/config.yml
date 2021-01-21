@@ -18,6 +18,7 @@ collections:
           - {label: Email, name: email, widget: string}
           - {label: URL, name: url, widget: string}
           - {label: Main Logo, name: main_logo, widget: image}
+          - {label: Footer Logo, name: footer_logo, widget: image}
           - {label: Preview Image, name: preview_image, widget: image}
           - {label: Favicon, name: favicon, widget: image}
           - label: Social Profiles

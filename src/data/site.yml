@@ -4,6 +4,7 @@ provider: EIT RawMaterials
 email: academy@eitrawmaterials.eu
 url: https://lightprof.eitrawmaterials.eu/
 main_logo: /logo-eitrmacademy.svg
+footer_logo: /logo-eitrmacademy-landscape.svg
 preview_image: /preview.jpg
 favicon: /ico-favicon.png
 social_links:
