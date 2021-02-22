@@ -22,4 +22,4 @@ footer_links:
   - title: Imprint
     href: https://eitrawmaterials.eu/impressum/
   - title: Privacy Policy
-    href: https://eitrawmaterials.eu/privacy-policy/
+    href: /privacy.pug
