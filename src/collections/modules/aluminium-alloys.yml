@@ -1,10 +1,9 @@
 title: Aluminium Alloys
 fullTitle: Aluminium Light Alloys
 level: Advanced
-summary: >-
-  In this module, you will learn the excellent lightweight potential of
-  Aluminium and its alloys, which can be exploited into industrial components 
-  thanks to a wide variety of processing solutions.
+summary: In this module, you will learn the excellent lightweight potential of
+  Aluminium and its alloys, which can be exploited into industrial
+  components  thanks to a wide variety of processing solutions.
 desc: After an introductory review of key-properties of Aluminium and its
   alloys, and a summary of relevant application fields, this Module will address
   the main processing routes (primary production, recycling, rolling, extrusion,
@@ -33,13 +32,11 @@ contents: |-
   * LCA applied to Aluminium components
   * Design rules and criteria for Aluminium alloys components
   * Design examples
-dates: >-
+dates: |-
   Course in 2021:\
-
   First Online meeting: October 18, 2021\
-
   Live phase: November 18 - November 20, 2021
 registerUrl: https://www.personenzertifizierung.fraunhofer.de/en/certificates/application-form-lightweight-materials.html
-contacts: Prof. Franco Bonollo
+contacts: Dr. Serge Monturet
 icon: /ico-aluminum.svg
 order: 6
