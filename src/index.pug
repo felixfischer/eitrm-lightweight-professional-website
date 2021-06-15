@@ -216,14 +216,14 @@ html(lang="en")
                 div.max-w-6xl.mx-auto
                     div(class="sm:flex")
                         //- Contact
-                        div(class="sm:w-1/2 md:w-1/3 lg:w-1/4")
+                        div(class="sm:w-1/2 md:w-1/2 lg:w-1/3")
                             h4.uppercase.mb-4= contact.contact_us
                             div #{site.provider}
                             div
                                 - let href = `mailto:${site.email}`
                                 a(href=href class="text-white hover:text-teal umami--click--footer-email") #{site.email}
                         //- Social Media
-                        div(class="sm:w-1/2 md:w-1/3 lg:w-1/4 mt-8 sm:mt-0")
+                        div(class="sm:w-1/2 md:w-1/2 lg:w-1/3 mt-8 sm:mt-0")
                             h4.mb-4.uppercase= contact.connect_with_us
                             ul.list-none
                                 each link in site.social_links
