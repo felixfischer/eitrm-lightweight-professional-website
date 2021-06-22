@@ -1,0 +1,77 @@
+- let uploadsDir = '../' + netlifyCmsConfig.media_folder
+- let siteTitle = `Privacy Policy | ${site.title}`
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        title=site.title
+        meta(name="description", content='An overview of data protection')
+        meta(property="og:title" content=siteTitle)
+        meta(property="og:description" content='An overview of data protection')
+        meta(property="og:url" content=site.url)
+        meta(property="og:image" content=uploadsDir+site.preview_image)
+        meta(name="twitter:card" content="summary_large_image")
+        meta(name="viewport", content="width=device-width")
+        //- meta(name="theme-color" content="")
+        link(rel="stylesheet", href="./style/main.pcss")
+        link(rel="shortcut icon" href=uploadsDir+site.favicon type="image/x-icon")
+        //- link(rel="preload" href="" as="")
+        script(defer src="./script/main.js")
+        script(async defer data-website-id="58b992a7-81c4-487c-8653-84e1b1702019" src="https://umami.n11r.net/umami.js")
+        //- script(defer src="https://identity.netlify.com/v1/netlify-identity-widget.js")
+
+    body(class="text-base" style="min-width: 375px;")
+        div(class="mx-auto" id="wrapper" style="max-width: 1680px")
+            //- Header
+            header(id="header-main" class="relative bg-cover bg-vectors-teal overflow-hidden lg:border-b-8 border-teal")
+                img(alt="" src=uploadsDir+header.background_image class="absolute object-cover hidden lg:block min-w-full min-h-full")
+                //- Mobile cover image
+                div(class="aspect ratio-1-2 lg:hidden bg-headerimg relative")
+                    img(alt="" src=uploadsDir+header.background_image class="absolute object-cover lg:hidden z-0")
+                    a(href="/")
+                        img(src=uploadsDir+site.main_logo alt="EIT RawMaterials Academy" class="absolute z-10 w-full p-4")
+                //- Main Hero
+                div(class="relative max-w-6xl mx-auto pt-6 pb-16 px-4 lg:px-0")
+                    a(href="/")
+                        img(src=uploadsDir+site.main_logo alt="EIT RawMaterials Academy" class="hidden lg:block max-w-xl self-start")
+                    div(class="lg:w-2/3 self-end mt-16 lg:mt-0 lg:py-32 lg:pr-12 lg:float-right")
+                        div(id="cta")
+                            h1(class="text-white text-5xl leading-16 mb-1 font-bold")= header.headline
+
+            //- main section
+            main
+                section(class="px-4 py-24")
+                    div(class="")
+                        include template/application-form.pug
+
+            //- Footer
+            footer.bg-blue.text-white.px-4.pt-12.pb-8
+                div.max-w-6xl.mx-auto
+                    div(class="sm:flex")
+                        //- Contact
+                        div(class="sm:w-1/2 md:w-1/3 lg:w-1/4")
+                            h4.uppercase.mb-4= contact.contact_us
+                            div #{site.provider}
+                            div
+                                - let href = `mailto:${site.email}`
+                                a(href=href class="text-white hover:text-teal umami--click--footer-email") #{site.email}
+                        //- Social Media
+                        div(class="sm:w-1/2 md:w-1/3 lg:w-1/4 mt-8 sm:mt-0")
+                            h4.mb-4.uppercase= contact.connect_with_us
+                            ul.list-none
+                                each link in site.social_links
+                                    li.inline.text-2xl.-ml-1.mr-3
+                                        - let icon = `<span class="icon-${link.title.toLowerCase()}"></span>`
+                                        - let eventClass = 'umami--click--' + link.title.toLowerCase()
+                                        a(href=link.href target="_blank" rel="noopener" aria-label=link.title class=eventClass + " text-white hover:text-teal") !{icon}
+                    div(class='lg:flex flex-row-reverse justify-between items-end')
+                        //- Logo
+                        div(class="lg:w-1/4 py-8 sm:pt-8 sm:pb-12 lg:py-0")
+                            a(href="https://eitrawmaterials.eu/eit-rm-academy/" target="_blank" rel="noopener")
+                                img(src=uploadsDir+site.footer_logo alt="EIT RawMaterials Academy")
+                        //- Service Links
+                        div#service-links
+                            ul.font-bold.uppercase
+                                for link in site.footer_links
+                                    li.inline-block
+                                        a(href=link.href target=link.target_blank ? '_blank' : '' rel="noopener" class="text-white hover:text-teal icon-arrow-right mr-8") #{link.title}
