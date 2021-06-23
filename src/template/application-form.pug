@@ -1,10 +1,10 @@
 div.section-inner.py-20
     div.form-wrapper
-        form(class="eitform" enctype="multipart/form-data" id='application-form' method='post' action='/formhandler.php')
-            input(id="form-title" name="form-title" class="hidden" value="application")
+        form(class="eitform" enctype="multipart/form-data" id="lightprof-application-form" method='post' action='https://forms.n11r.eu/formhandler.php')
+            input(id="form-title" name="form-title" class="hidden" value="lightprof-application")
             // input(name="secret-token" value="Customer_Backrest_Relapse6" class="hidden")
-            h2 1. Personal Information
-            div.eitrounded.bg-tealTint.p-12.mb-12
+            h2.leading-12.mb-12.overline.overline-blue.text-3xl.text-blue.font-bold 1. Personal Information
+            div.bg-teal-lighter.corner-lg.p-12.mb-12
                 div.fieldgroup
                     label First Name
                         input(name="firstname" required)
@@ -20,110 +20,8 @@ div.section-inner.py-20
                         input(name="country" required)
                     label Citizenship
                         input(name="citizenship" required)
-            h2 2. Education, professional experience, research
-            div.eitrounded.bg-tealTint.p-12.mb-12
-                div.fieldgroup
-                    label Name of your organisation
-                        input(name="orgname" required)
-                    label Organisation type
-                        select(name="orgtype" id="orgtype" required)
-                            option(value="", disabled, selected) Select organisation type
-                            option Development agency/NGO
-                            option Private company
-                            option Public authority
-                            option Self-employed/consultant
-                            option Start-up/SME
-                            option University/research institute
-                            option Other
-                    label.hidden#orgtype-other Organisation type (please specify)
-                        input(name="orgtype-other")
-                    label Department/faculty
-                        input(name="department" required)
-                    label Current role in your organisation (position/job title)
-                        input(name="role" required)
-                    //- label Current professional activities in raw materials
-                        input(name="activities-in-raw-materials" required)
-                hr
-                div.fieldgroup
-                    //- label Are you member of the BDG Berufsverband Deutscher Geowissenschaftler?
-                        select(name="is-bdg-member" id="bdg-membership" required)
-                            option(value="", disabled, selected) Select answer
-                            option Yes
-                            option No
-                    label Are you a EurGeol title holder?
-                        select(name="holds-eurgeol-title" id="eurgeol-title" required)
-                            option(value="", disabled, selected) Select answer
-                            option Yes
-                            option No
-                hr
-                div.fieldgroup
-                    label Is earth observation data used in your organisation?
-                        select(name="uses-earth-observation-data" id="earthobs-usage" required)
-                            option(value="", disabled, selected) Select answer
-                            option Yes
-                            option No
-                    label#how-earthobs-usage.hidden How?
-                        input(name="how-earth-observation-data-is-used")
-                    label Is Copernicus data used in your organisation?
-                        select(name="uses-copernicus-data" id="copernicus-usage" required)
-                            option(value="", disabled, selected) Select answer
-                            option Yes
-                            option No
-                    label#how-copernicus-usage.hidden How?
-                        input(name="how-copernicus-data-is-used")
-                hr
-                div.fieldgroup
-                    div
-                        label You have a background in
-                        label.font-normal.text-gray
-                            input(type='hidden' name='background-in-earth-sciences' value='no')
-                            input(type='checkbox' name='background-in-earth-sciences' value='yes')
-                            | Earth sciences
-                        label.font-normal.text-gray
-                            input(type='hidden' name='background-in-engineering' value='no')
-                            input(type='checkbox' name='background-in-engineering' value='yes')
-                            | Engineering
-                        label.font-normal.text-gray
-                            input(type='hidden' name='background-in-gis' value='no')
-                            input(type='checkbox' name='background-in-gis' value='yes')
-                            | GIS
-                        label.font-normal.text-gray
-                            input(type='hidden' name='background-in-exploration-or-mining' value='no')
-                            input(type='checkbox' name='background-in-exploration-or-mining' value='yes')
-                            | Mineral resources exploration and/or mining
-                hr
-                div.fieldgroup
-                    label Regarding earth observation you have
-                        select(name="earth-observation-knowledge" required)
-                            option(value="", disabled, selected) Select answer
-                            option No previous knowledge
-                            option Basic knowledge
-                            option Intermediate knowledge
-                            option Advanced knowledge
-                    label Regarding raw materials exploration or mining, you have
-                        select(name="exploration-mining-knowledge" required)
-                            option(value="", disabled, selected) Select answer
-                            option No previous knowledge
-                            option Basic knowledge
-                            option Intermediate knowledge
-                            option Advanced knowledge
-                hr
-                div
-                    label What is your motivation for participating in the RawMatCop Academy?
-                        textarea(name='motivation' required)
-                    label What are your expectations of the course?
-                        textarea(name='expectations' required)
-                div.fieldgroup
-                    label Do you expect to use the knowledge developed during the course in your professional life? 
-                        select(name="expect-to-use-course-knowledge-professionally" id="use-course-knowledge" required)
-                            option(value="", disabled, selected) Select answer
-                            option Yes
-                            option No
-                    label#how-use-course-knowledge.hidden How?
-                        input(name="how-course-knowledge-will-be-used")
-
-            h2 3. Information for EIT RawMaterials
-            div.eitrounded.bg-tealTint.p-12.mb-12
+            h2.leading-12.mb-12.overline.overline-blue.text-3xl.text-blue.font-bold 2. Information for EIT RawMaterials
+            div.bg-teal-lighter.corner-lg.p-12.mb-12
                 div.fieldgroup
                     //- label If you are one of the selected participants, who will pay for the course fee?
                         select(name="who-pays" required)
@@ -155,23 +53,23 @@ div.section-inner.py-20
                     label Additional comments (optional)
                         textarea(name='comments')
             div
-                p.font-bold.blue If you would like to receive further information from EIT RawMaterials on any of the following topics, please select them below.
-                label.font-normal.text-gray
+                p.font-bold.blue.mb-4 If you would like to receive further information from EIT RawMaterials on any of the following topics, please select them below.
+                label.font-normal.text-grey
                     input(type='hidden' name='subscribe-alumni' value='no')
                     input(type='checkbox' name='subscribe-alumni' value='yes')
                     | EIT RawMaterials Alumni Association
-                label.font-normal.text-gray
+                label.font-normal.text-grey
                     input(type='hidden' name='subscribe-academy-programmes-and-opportunities' value='no')
                     input(type='checkbox' name='subscribe-academy-programmes-and-opportunities' value='yes')
                     | Education programmes and opportunities from the RawMaterials Academy
-                label.font-normal.text-gray
+                label.font-normal.text-grey
                     input(type='hidden' name='subscribe-innovation-and-business-support-opportunities'  value='no')
                     input(type='checkbox' name='subscribe-innovation-and-business-support-opportunities'  value='yes')
                     | Innovation and business support opportunities from EIT RawMaterials
             div.mt-6
                 p You can change your mind at any time by clicking the unsubscribe link in the footer of any email you receive from us, or by contacting us at <a href="mailto:academy@eitrawmaterials.eu">academy@eitrawmaterials.eu</a>. We will keep your personal information private and secure, and will only use your data for the agreed and selected reasons. For more information about our general privacy practices please read our privacy policy at <a target="_blank" href="https://eitrawmaterials.eu/privacy-policy/">eitrawmaterials.eu/privacy-policy</a>. By filling this form, you agree that we may process your information in accordance with these terms.
             div.text-center.mt-20.flex.items-center
-                button(type="submit" class="btn-submit button my-12 mx-auto hide-on-submit") Submit Application
+                button(type="submit" class="btn-submit button button-teal icon-arrow-right hover:button-blue my-12 mx-auto hide-on-submit") Submit Application
                 img(alt='Loading...' src='/media/ajax-loader.gif', class="ajax-loader mx-auto my-12 hidden")
                 p.submit-success.hero.my-0.mx-auto.text-center.hidden 
                     strong Thank you!&nbsp;
