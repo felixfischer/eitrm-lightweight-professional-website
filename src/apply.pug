@@ -1,14 +1,12 @@
 - let uploadsDir = '../' + netlifyCmsConfig.media_folder
-- let siteTitle = `Privacy Policy | ${site.title}`
+- let siteTitle = `Application | ${site.title}`
 doctype html
 html(lang="en")
     head
         meta(charset="utf-8")
-        title=site.title
-        meta(name="description", content='An overview of data protection')
+        title=siteTitle
         meta(property="og:title" content=siteTitle)
-        meta(property="og:description" content='An overview of data protection')
-        meta(property="og:url" content=site.url)
+        meta(property="og:url" content=site.url+'/apply.html')
         meta(property="og:image" content=uploadsDir+site.preview_image)
         meta(name="twitter:card" content="summary_large_image")
         meta(name="viewport", content="width=device-width")
@@ -40,7 +38,7 @@ html(lang="en")
 
             //- main section
             main
-                section(class="px-4 py-24")
+                section(class="p-4")
                     div(class="max-w-6xl mx-auto")
                         include template/application-form.pug
 
@@ -49,14 +47,14 @@ html(lang="en")
                 div.max-w-6xl.mx-auto
                     div(class="sm:flex")
                         //- Contact
-                        div(class="sm:w-1/2 md:w-1/3 lg:w-1/4")
+                        div(class="sm:w-1/2 lg:w-1/3")
                             h4.uppercase.mb-4= contact.contact_us
                             div #{site.provider}
                             div
                                 - let href = `mailto:${site.email}`
                                 a(href=href class="text-white hover:text-teal umami--click--footer-email") #{site.email}
                         //- Social Media
-                        div(class="sm:w-1/2 md:w-1/3 lg:w-1/4 mt-8 sm:mt-0")
+                        div(class="sm:w-1/2 lg:w-1/3 mt-8 sm:mt-0")
                             h4.mb-4.uppercase= contact.connect_with_us
                             ul.list-none
                                 each link in site.social_links

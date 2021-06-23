@@ -3,7 +3,28 @@ div.section-inner.py-20
         form(class="eitform" enctype="multipart/form-data" id="lightprof-application-form" method='post' action='https://forms.n11r.eu/formhandler.php')
             input(id="form-title" name="form-title" class="hidden" value="lightprof-application")
             // input(name="secret-token" value="Customer_Backrest_Relapse6" class="hidden")
-            h2.leading-12.mb-12.overline.overline-blue.text-3xl.text-blue.font-bold 1. Personal Information
+            h2.leading-12.mb-12.overline.overline-blue.text-3xl.text-blue.font-bold 1. Course Selection
+            div.bg-teal-lighter.corner-lg.p-12.mb-12
+                label Please select the module you would like to take part in
+                    select(name="desired-module" id="desired-module" required)
+                        option(value="", disabled, selected) Select module
+                        option(value="FPR-March-2021") Advanced Level – Fibre Reinforced Plastics / Start online March 24, 2021 / Live phase: April 28-30, 2021
+                        option(value="Polymers-June-2021") Advanced Level – Polymers / Start online June 7, 2021 / Live phase: July 6-8, 2021
+                        option(value="Powder-Metallurgy-2021") Advanced Level – Powder Metallurgy and Additive Manufacturing / Start online April 7, 2021 / Live phase: May 5-7, 2021
+                        option(value="Introductory Module-2021") Basic level – Introductory Module / Start online March 1, 2021 / Live phase: March 24-26, 2021
+                p.mb-2 The participation fee amounts to
+                p.mb-2.pl-4 € 984,- Training fee<br>€ 235,- Examination fee
+                p.mb-2 The fees are excluded from value added tax.
+                p.mb-4 Please note that the training and examination will be conducted online.
+                div.fieldgroup
+                    label I hereby apply for
+                        select(name="applying-for" id="applying-for" required)
+                            option(value="", disabled, selected) Please select
+                            option(value="training") Training only
+                            option(value="training+examination") Training and examination
+                    label If you have a discount code, please enter it here
+                        input(name="discount-code")
+            h2.leading-12.mb-12.overline.overline-blue.text-3xl.text-blue.font-bold 2. Personal Information
             div.bg-teal-lighter.corner-lg.p-12.mb-12
                 div.fieldgroup
                     label First Name
@@ -20,7 +41,7 @@ div.section-inner.py-20
                         input(name="country" required)
                     label Citizenship
                         input(name="citizenship" required)
-            h2.leading-12.mb-12.overline.overline-blue.text-3xl.text-blue.font-bold 2. Information for EIT RawMaterials
+            h2.leading-12.mb-12.overline.overline-blue.text-3xl.text-blue.font-bold 3. Information for EIT RawMaterials
             div.bg-teal-lighter.corner-lg.p-12.mb-12
                 div.fieldgroup
                     //- label If you are one of the selected participants, who will pay for the course fee?
@@ -28,7 +49,7 @@ div.section-inner.py-20
                             option(value="", disabled, selected) Select answer
                             option Me
                             option My organisation
-                    label Where did you hear about RawMatCop Academy?
+                    label Where did you hear about Lightweighting Professional?
                         select(name="heard-from" id="heard-from" required)
                             option(value="", disabled, selected) Select answer
                             option Social Media - LinkedIn
@@ -36,10 +57,9 @@ div.section-inner.py-20
                             option Social Media - Facebook
                             option EIT RawMaterials website
                             option EIT RawMaterials Alumni
-                            option European Commission - DG GROW/Copernicus Unit
                             option Bilateral contact
                             option Other
-                    label#heard-source.hidden Where did you hear about RawMatCop Academy 2020?<br>(please specify)
+                    label#heard-source.hidden Where did you hear about Lightweighting Professional?<br>(please specify)
                         input(name="heard-from-source")
                     //- label Upload your CV (PDF &lt;20 MB)...
                         input(type="file" name="file" id="file" accept=".pdf")

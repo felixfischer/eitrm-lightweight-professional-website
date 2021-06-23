@@ -16,6 +16,7 @@ function main() {
     // Ready
     // console.debug('ready')
     stopBodyFromScrollingWhenModalIsOpen()
+    monitorFormChanges()
     handleFormSubmission('#lightprof-application-form')
 }
 
@@ -67,6 +68,57 @@ function handleFormSubmission(formId) {
             },
         })
     })
+}
+
+function monitorFormChanges() {
+    $('select').change(updateForm)
+    $('input').change(updateForm)
+    $('#file').change(checkUploadFile)
+}
+
+function updateForm() {
+    function showEl(el) {
+        $(el).removeClass('hidden')
+        $(el).find('input').attr('required', 'required')
+    }
+    function hideEl(el) {
+        $(el).addClass('hidden')
+        $(el).find('input').attr('required', null).val('')
+    }
+    let rules = [
+        { trigger: '#orgtype', value: 'Other', target: '#orgtype-other', tasks: { yes: [showEl], no: [hideEl] } },
+        { trigger: '#use-course-knowledge', value: 'Yes', target: '#how-use-course-knowledge', tasks: { yes: [showEl], no: [hideEl] }},
+        { trigger: '#heard-from', value: 'Other', target: '#heard-source', tasks: { yes: [showEl], no: [hideEl] }},
+    ]
+    rules.forEach(function (rule) {
+        var tasks = $(rule.trigger).val() === rule.value ? rule.tasks.yes : rule.tasks.no
+        tasks.forEach(function(task) { task(rule.target )})
+    })
+}
+
+function checkUploadFile(e) {
+    if (e.currentTarget.files.length > 0) {
+        var file = e.currentTarget.files[0] // puts all files into an array
+        var filesize = ((file.size / 1024) / 1024).toFixed(4) // MB
+        if (file.name != "item" && typeof file.name != "undefined") {
+            if (file.type != 'application/pdf') {
+                alert('Sorry! Only PDF files can be uploaded.')
+                e.currentTarget.value = ''
+            }
+            else if (filesize > 20) {
+                alert('Sorry! This file is too large (> 20 MB). Please choose a different file or share your LinkedIn profile URL instead.')
+                e.currentTarget.value = ''
+            }
+            else {
+                // un-require LinkedIn URL field if CV is being uploaded
+                document.querySelector('#linkedin-url').removeAttribute('required')
+            }
+        } 
+    }
+    else {
+        // re-require LinkedIn URL field if CV is not being uploaded
+        document.querySelector('#linkedin-url').setAttribute('required', 'required')
+    }
 }
 
 ready(main)
