@@ -2,19 +2,30 @@ div.section-inner.py-20
     div.form-wrapper
         form(class="eitform" enctype="multipart/form-data" id="lightprof-application-form" method='post' action='https://forms.n11r.eu/formhandler.php')
             input(id="form-title" name="form-title" class="hidden" value="lightprof-application")
-            // input(name="secret-token" value="Customer_Backrest_Relapse6" class="hidden")
-            h2.leading-12.mb-12.overline.overline-blue.text-3xl.text-blue.font-bold 1. Course Selection
+            //- input(name="secret-token" value="Customer_Backrest_Relapse6" class="hidden")
+            h2.leading-12.mb-4.overline.overline-blue.text-3xl.text-blue.font-bold 1. Course Selection
+            h3.text-xl.text-blue.font-bold.mb-4 Upcoming courses
+            ul.ml-5.mb-4.list-disc.mb-8.list-inside
+                li <strong>Introductory Module (Basic Level)</strong> – First Online meeting: November 1, 2021 / Live phase: November 24 - November 26, 2021
+                li <strong>Steel (Advanced Level)</strong> – First Online meeting: September 1, 2021 / Live phase: September 29 - October 1, 2021
+                li <strong>Magnesium (Advanced Level)</strong> – First Online meeting: September 8, 2021 / Live phase: October 6 - October 8, 2021
+                li <strong>Aluminium Alloys (Advanced Level)</strong> – First Online meeting: October 18, 2021 / Live phase: November 18 - November 20, 2021
+                li <strong>Cast Irons (Advanced Level)</strong> – First Online meeting: September 15, 2021 / Live phase: October 13 - October 15, 2021
+                li <strong>Fiber Reinforced Plastics</strong> – <a href="mailto:professional.training@eitrawmaterials.eu">Contact us to be alerted to new dates</a>
+                li <strong>Powder Metallurgy and Additive Manufacturing</strong> – <a href="mailto:professional.training@eitrawmaterials.eu">Contact us to be alerted to new dates</a>
+                li <strong>Polymers</strong> – <a href="mailto:professional.training@eitrawmaterials.eu">Contact us to be alerted to new dates</a>
             div.bg-teal-lighter.corner-lg.p-12.mb-12
                 label Please select the module you would like to take part in
                     select(name="desired-module" id="desired-module" required)
                         option(value="", disabled, selected) Select module
-                        option(value="FPR-March-2021") Advanced Level – Fibre Reinforced Plastics / Start online March 24, 2021 / Live phase: April 28-30, 2021
-                        option(value="Polymers-June-2021") Advanced Level – Polymers / Start online June 7, 2021 / Live phase: July 6-8, 2021
-                        option(value="Powder-Metallurgy-2021") Advanced Level – Powder Metallurgy and Additive Manufacturing / Start online April 7, 2021 / Live phase: May 5-7, 2021
-                        option(value="Introductory Module-2021") Basic level – Introductory Module / Start online March 1, 2021 / Live phase: March 24-26, 2021
+                        option(value="Introductory") Introductory Module (Basic Level) – November 2021
+                        option(value="Steel") Steel (Advanced Level) – September-October 2021
+                        option(value="Magnesium") Magnesium (Advanced Level) – September-October 2021
+                        option(value="Aluminium-Alloys") Aluminium Alloys (Advanced Level) – October-November 2021
+                        option(value="Cast-Irons") Cast Irons (Advanced Level) – September-October 2021
                 p.mb-2 The participation fee amounts to
-                p.mb-2.pl-4 € 984,- Training fee<br>€ 235,- Examination fee
-                p.mb-2 The fees are excluded from value added tax.
+                p.mb-2.pl-4 € 900,- Training fee<br>€ 235,- Examination fee
+                p.mb-2 Fees are exclusive of value added tax.
                 p.mb-4 Please note that the training and examination will be conducted online.
                 div.fieldgroup
                     label I hereby apply for
@@ -34,13 +45,17 @@ div.section-inner.py-20
                     label Email
                         input(type="email" name="email" required)
                     label Gender
-                        input(name="gender" required)
+                        select(name="gender" id="gender" required)
+                            option(value="", disabled, selected) Please select
+                            option(value="female") Female
+                            option(value="male") Male
+                            option(value="other-or-nondisclosed") Other/prefer not to say
                     label City
                         input(name="city" required)
                     label Country
                         input(name="country" required)
-                    label Citizenship
-                        input(name="citizenship" required)
+                    label Job title
+                        input(name="job-title" required)
             h2.leading-12.mb-12.overline.overline-blue.text-3xl.text-blue.font-bold 3. Information for EIT RawMaterials
             div.bg-teal-lighter.corner-lg.p-12.mb-12
                 div.fieldgroup
@@ -63,8 +78,6 @@ div.section-inner.py-20
                         input(name="heard-from-source")
                     //- label Upload your CV (PDF &lt;20 MB)...
                         input(type="file" name="file" id="file" accept=".pdf")
-                    label Your LinkedIn profile URL
-                        input(name="linkedin-url" id="linkedin-url" type="url")
                     label Please provide the full name and postal address of the organization or person who is paying for the course
                         textarea(name='payer')
                     label If an organization based in the EU is the paying institution, please, provide its VAT number
@@ -88,6 +101,11 @@ div.section-inner.py-20
                     | Innovation and business support opportunities from EIT RawMaterials
             div.mt-6
                 p You can change your mind at any time by clicking the unsubscribe link in the footer of any email you receive from us, or by contacting us at <a href="mailto:academy@eitrawmaterials.eu">academy@eitrawmaterials.eu</a>. We will keep your personal information private and secure, and will only use your data for the agreed and selected reasons. For more information about our general privacy practices please read our privacy policy at <a target="_blank" href="https://eitrawmaterials.eu/privacy-policy/">eitrawmaterials.eu/privacy-policy</a>. By filling this form, you agree that we may process your information in accordance with these terms.
+            div.mt-6
+                label.text-grey
+                    input(type='hidden' name='agree-privacy-terms' value='no')
+                    input(type='checkbox' name='agree-privacy-terms' value='yes' required)
+                    | I agree to my data being stored in accordance with the privacy policy, and for EIT RawMaterials to contact me regarding my booking.
             div.text-center.mt-20.flex.items-center
                 button(type="submit" class="btn-submit button button-teal icon-arrow-right hover:button-blue my-12 mx-auto hide-on-submit") Submit Application
                 img(alt='Loading...' src='/media/ajax-loader.gif', class="ajax-loader mx-auto my-12 hidden")
