@@ -46,10 +46,13 @@ overview:
     - term: Type of Training
       deed: Online Training
     - term: Course Duration
-      deed: The scope of this training is based on a 40-hour classroom course. The
-        e-learning format includes learning materials and videos for self-paced
-        learning independent of time and place, self-assessment questions, as
-        well as live online tutorials for exam preparation.
+      deed: The scope of this training is based on a 40-hour classroom course. Each
+        module begins with a first online meeting where participants will review
+        the structure of the course with the trainer. This will be followed by a
+        three-week self-paced period of work that includes e-learning materials
+        such as videos, self-assessment quizzes, and exercises. Lastly, during
+        the fourth week, there will be a three-day live online session with the
+        trainer that will include a tutorial for exam preparation.
     - term: Language
       deed: English
     - term: Course Contents
