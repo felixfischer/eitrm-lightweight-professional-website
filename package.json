@@ -7,7 +7,7 @@
     "test": "yarn build",
     "clean": "rm -rf .cache dist",
     "serve": "parcel serve src/*.pug",
-    "build": "parcel build src/*.pug --no-source-maps --no-cache --detailed-report && du -sh dist",
+    "build": "parcel build src/*.pug --no-source-maps --no-cache --detailed-report --public-url https://lightprof.eitrawmaterials.eu && du -sh dist",
     "release": "release-it",
     "snap": "git add -A && git commit -m 'Snapshot'",
     "caddy": "caddy file-server --browse --root ./dist/ --listen localhost:1234"
