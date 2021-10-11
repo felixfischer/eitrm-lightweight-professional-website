@@ -1,6 +1,6 @@
 {
   "name": "eitrm-lightweight-professional-website",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "EIT RawMaterials' Lightweight Professional Course website",
   "main": "index.js",
   "scripts": {
