@@ -158,7 +158,7 @@ html(lang="en")
                                                                         h3(class="font-bold text-3xl my-4 overline overline-white")= about.modules_section.dates
                                                                         div.markdown 
                                                                             != marked(mod.dates, {gfm: true, breaks: true})
-                                                                        if mod.registerUrl
+                                                                        if mod.registerUrl && mod.registerUrl !== ""
                                                                             div
                                                                                 a(href=mod.registerUrl target="_blank" class="button button-white mt-12") Register now
                                                                         else
